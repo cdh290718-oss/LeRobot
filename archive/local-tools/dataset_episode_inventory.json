@@ -1,0 +1,156 @@
+[
+  {
+    "dataset": "ChomCUI/10_20260916_214311",
+    "episodes": 5,
+    "episode_rows": 5,
+    "data_episodes": 5,
+    "frames": 3005,
+    "info_frames": 3005,
+    "tasks": [
+      "10"
+    ],
+    "video_files": 2,
+    "video_bytes": 94218578,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/11_20260916_220529",
+    "episodes": 5,
+    "episode_rows": 5,
+    "data_episodes": 5,
+    "frames": 3371,
+    "info_frames": 3371,
+    "tasks": [
+      "11"
+    ],
+    "video_files": 2,
+    "video_bytes": 105086204,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/12_20260916_220919",
+    "episodes": 5,
+    "episode_rows": 5,
+    "data_episodes": 5,
+    "frames": 3076,
+    "info_frames": 3076,
+    "tasks": [
+      "12"
+    ],
+    "video_files": 2,
+    "video_bytes": 96997993,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/13_20260916_221419",
+    "episodes": 10,
+    "episode_rows": 10,
+    "data_episodes": 10,
+    "frames": 6529,
+    "info_frames": 6529,
+    "tasks": [
+      "13"
+    ],
+    "video_files": 2,
+    "video_bytes": 198034809,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/14_20260918_120729",
+    "episodes": 12,
+    "episode_rows": 12,
+    "data_episodes": 12,
+    "frames": 7058,
+    "info_frames": 7058,
+    "tasks": [
+      "14"
+    ],
+    "video_files": 2,
+    "video_bytes": 146731427,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/15_20260918_121827",
+    "episodes": 2,
+    "episode_rows": 2,
+    "data_episodes": 2,
+    "frames": 860,
+    "info_frames": 860,
+    "tasks": [
+      "15"
+    ],
+    "video_files": 2,
+    "video_bytes": 16560712,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/16_20260918_121952",
+    "episodes": 5,
+    "episode_rows": 5,
+    "data_episodes": 5,
+    "frames": 2692,
+    "info_frames": 2692,
+    "tasks": [
+      "16"
+    ],
+    "video_files": 2,
+    "video_bytes": 52913401,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/17_20260918_122237",
+    "episodes": 13,
+    "episode_rows": 13,
+    "data_episodes": 13,
+    "frames": 6882,
+    "info_frames": 6882,
+    "tasks": [
+      "17"
+    ],
+    "video_files": 2,
+    "video_bytes": 135570985,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/18_20260918_124443",
+    "episodes": 3,
+    "episode_rows": 3,
+    "data_episodes": 3,
+    "frames": 1542,
+    "info_frames": 1542,
+    "tasks": [
+      "18"
+    ],
+    "video_files": 2,
+    "video_bytes": 31227958,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/20_20260918_130233",
+    "episodes": 3,
+    "episode_rows": 3,
+    "data_episodes": 3,
+    "frames": 1814,
+    "info_frames": 1814,
+    "tasks": [
+      "20"
+    ],
+    "video_files": 2,
+    "video_bytes": 39100915,
+    "consistent": true
+  },
+  {
+    "dataset": "ChomCUI/22_20260918_131137",
+    "episodes": 5,
+    "episode_rows": 5,
+    "data_episodes": 5,
+    "frames": 2985,
+    "info_frames": 2985,
+    "tasks": [
+      "22"
+    ],
+    "video_files": 2,
+    "video_bytes": 62826500,
+    "consistent": true
+  }
+]

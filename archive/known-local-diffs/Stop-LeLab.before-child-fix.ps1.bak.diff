@@ -1,0 +1,12 @@
+--- backup/Stop-LeLab.before-child-fix.ps1.bak
++++ local/Stop-LeLab.ps1
+@@ -7,7 +7,8 @@
+ if ($rootProcess.ExecutablePath -ne 'G:\LeRobot\.venv\Scripts\python.exe' -or $rootProcess.CommandLine -notmatch 'lelab.scripts.lelab') { throw 'PID does not match this LeLab launcher; nothing stopped.' }
+ $childProcesses = Get-CimInstance Win32_Process -Filter "ParentProcessId=$serverProcessId"
+ foreach ($child in $childProcesses) {
+-    if ($child.ExecutablePath -eq 'G:\LeRobot\.venv\Scripts\python.exe') { Stop-Process -Id $child.ProcessId -ErrorAction SilentlyContinue }
++    if ($child.ExecutablePath -in @('G:\LeRobot\.venv\Scripts\python.exe', 'G:\LeRobot\python\cpython-3.12-windows-x86_64-none\python.exe') -and $child.CommandLine -match 'lelab.scripts.lelab') { Stop-Process -Id $child.ProcessId -ErrorAction SilentlyContinue }
+ }
+ Stop-Process -Id $serverProcessId -ErrorAction SilentlyContinue
+ Write-Host 'LeLab background server stopped.'
++

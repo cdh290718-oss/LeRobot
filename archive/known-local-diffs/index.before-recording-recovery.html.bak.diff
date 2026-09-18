@@ -1,0 +1,10 @@
+--- backup/index.before-recording-recovery.html.bak
++++ source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/dist/index.html
+@@ -16,5 +16,6 @@
+ 
+   <body>
+     <div id="root"></div>
+-  </body>
++  <script src="/recording-recovery.js" defer></script></body>
+ </html>
++

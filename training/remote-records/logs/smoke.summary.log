@@ -1,0 +1,20 @@
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:accelerate.utils.other:[RANK 0] Detected kernel version 5.4.250, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+INFO 2026-09-18 09:47:21 ot_train.py:232 {'batch_size': 4,
+INFO 2026-09-18 09:47:21 ot_train.py:240 Logs will be saved locally.
+INFO 2026-09-18 09:47:21 ot_train.py:258 Creating dataset
+INFO 2026-09-18 09:47:21 /factory.py:173 Train/eval split: 56 train, 11 eval (eval_split=0.15, 1 tasks)
+INFO 2026-09-18 09:47:21 ot_train.py:292 Creating policy
+INFO 2026-09-18 09:54:40 ot_train.py:365 Creating optimizer and scheduler
+INFO 2026-09-18 09:54:40 hedulers.py:155 Auto-scaling LR scheduler: num_training_steps (200) < num_decay_steps (30000). Scaling warmup: 1000 → 6, decay: 30000 → 200 (scale factor: 0.007)
+INFO 2026-09-18 09:54:40 ot_train.py:397 Output dir: /vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/smoke200
+INFO 2026-09-18 09:54:40 ot_train.py:404 cfg.steps=200 (200)
+INFO 2026-09-18 09:54:40 ot_train.py:405 dataset.num_frames=30305 (30K)
+INFO 2026-09-18 09:54:40 ot_train.py:406 dataset.num_episodes=56
+INFO 2026-09-18 09:54:40 ot_train.py:409 Effective batch size: 4 x 1 = 4
+INFO 2026-09-18 09:54:40 ot_train.py:410 num_learnable_params=99880992 (100M)
+INFO 2026-09-18 09:54:40 ot_train.py:411 num_total_params=450046176 (450M)
+INFO 2026-09-18 09:56:09 ot_train.py:637 step 200: eval_loss=0.1412
+INFO 2026-09-18 09:56:09 ot_train.py:651 Checkpoint policy after step 200
+INFO 2026-09-18 09:56:10 ot_train.py:737 End of training
+SMOKE_COMPLETE

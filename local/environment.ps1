@@ -1,0 +1,18 @@
+$ErrorActionPreference = 'Stop'
+$env:UV_CACHE_DIR = 'G:\LeRobot\cache\uv'
+$env:UV_PYTHON_INSTALL_DIR = 'G:\LeRobot\python'
+$env:UV_PYTHON_BIN_DIR = 'G:\LeRobot\tools\bin'
+$env:PIP_CACHE_DIR = 'G:\LeRobot\cache\pip'
+$env:HF_HOME = 'G:\LeRobot\cache\huggingface'
+$env:HF_LEROBOT_HOME = 'G:\LeRobot\data'
+$env:HF_LEROBOT_CALIBRATION = 'G:\LeRobot\data\calibration'
+$env:TORCH_HOME = 'G:\LeRobot\cache\torch'
+$env:XDG_CACHE_HOME = 'G:\LeRobot\cache'
+$env:LELAB_OUTPUT_ROOT = 'G:\LeRobot\models\training'
+$env:TEMP = 'G:\LeRobot\tmp'
+$env:TMP = $env:TEMP
+$env:PYTHONUTF8 = '1'
+$env:PYTHONNOUSERSITE = '1'
+$env:VIRTUAL_ENV = 'G:\LeRobot\.venv'
+$env:PATH = 'G:\LeRobot\.venv\Scripts;G:\LeRobot\tools\bin;' + $env:PATH
+Set-Location -LiteralPath 'G:\LeRobot'

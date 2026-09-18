@@ -1,0 +1,39 @@
+WARNING:accelerate.utils.other:[RANK 0] Detected kernel version 5.4.250, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+INFO 2026-09-18 09:57:07 ot_train.py:232 {'batch_size': 4,
+INFO 2026-09-18 09:57:07 ot_train.py:240 Logs will be saved locally.
+INFO 2026-09-18 09:57:07 ot_train.py:258 Creating dataset
+INFO 2026-09-18 09:57:08 /factory.py:173 Train/eval split: 56 train, 11 eval (eval_split=0.15, 1 tasks)
+INFO 2026-09-18 09:57:08 ot_train.py:292 Creating policy
+WARNING 2026-09-18 09:57:09 ls/_http.py:993 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO 2026-09-18 09:57:33 ot_train.py:365 Creating optimizer and scheduler
+INFO 2026-09-18 09:57:33 hedulers.py:155 Auto-scaling LR scheduler: num_training_steps (10000) < num_decay_steps (30000). Scaling warmup: 1000 → 333, decay: 30000 → 10000 (scale factor: 0.333)
+INFO 2026-09-18 09:57:34 ot_train.py:397 Output dir: /vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k
+INFO 2026-09-18 09:57:34 ot_train.py:404 cfg.steps=10000 (10K)
+INFO 2026-09-18 09:57:34 ot_train.py:405 dataset.num_frames=30305 (30K)
+INFO 2026-09-18 09:57:34 ot_train.py:406 dataset.num_episodes=56
+INFO 2026-09-18 09:57:34 ot_train.py:409 Effective batch size: 4 x 1 = 4
+INFO 2026-09-18 09:57:34 ot_train.py:410 num_learnable_params=99880992 (100M)
+INFO 2026-09-18 09:57:34 ot_train.py:411 num_total_params=450046176 (450M)
+INFO 2026-09-18 09:57:34 ot_train.py:452 Resuming data order at epoch 0, sample 800
+INFO 2026-09-18 10:03:25 ot_train.py:637 step 1000: eval_loss=0.1636
+INFO 2026-09-18 10:03:25 ot_train.py:651 Checkpoint policy after step 1000
+INFO 2026-09-18 10:10:42 ot_train.py:637 step 2000: eval_loss=0.2163
+INFO 2026-09-18 10:10:42 ot_train.py:651 Checkpoint policy after step 2000
+INFO 2026-09-18 10:18:00 ot_train.py:637 step 3000: eval_loss=0.1075
+INFO 2026-09-18 10:18:00 ot_train.py:651 Checkpoint policy after step 3000
+INFO 2026-09-18 10:25:15 ot_train.py:637 step 4000: eval_loss=0.1133
+INFO 2026-09-18 10:25:15 ot_train.py:651 Checkpoint policy after step 4000
+INFO 2026-09-18 10:32:34 ot_train.py:637 step 5000: eval_loss=0.1037
+INFO 2026-09-18 10:32:34 ot_train.py:651 Checkpoint policy after step 5000
+INFO 2026-09-18 10:39:51 ot_train.py:637 step 6000: eval_loss=0.0763
+INFO 2026-09-18 10:39:51 ot_train.py:651 Checkpoint policy after step 6000
+INFO 2026-09-18 10:47:07 ot_train.py:637 step 7000: eval_loss=0.0803
+INFO 2026-09-18 10:47:07 ot_train.py:651 Checkpoint policy after step 7000
+INFO 2026-09-18 10:54:24 ot_train.py:637 step 8000: eval_loss=0.0944
+INFO 2026-09-18 10:54:24 ot_train.py:651 Checkpoint policy after step 8000
+INFO 2026-09-18 11:01:41 ot_train.py:637 step 9000: eval_loss=0.0832
+INFO 2026-09-18 11:01:41 ot_train.py:651 Checkpoint policy after step 9000
+INFO 2026-09-18 11:08:55 ot_train.py:637 step 10000: eval_loss=0.0915
+INFO 2026-09-18 11:08:55 ot_train.py:651 Checkpoint policy after step 10000
+INFO 2026-09-18 11:08:56 ot_train.py:737 End of training
+TRAIN10K_COMPLETE

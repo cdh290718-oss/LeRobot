@@ -1,0 +1,17 @@
+--- backup/rollout.py.original
++++ source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/lelab/rollout.py
+@@ -349,7 +349,8 @@
+         if request.cameras:
+             cmd.append(f"--robot.cameras={_format_cameras_arg(request.cameras)}")
+ 
+-        log_dir = Path.home() / ".cache" / "huggingface" / "lerobot" / "inference_logs"
++        from lerobot.utils.constants import HF_LEROBOT_HOME
++        log_dir = HF_LEROBOT_HOME / "inference_logs"
+         log_dir.mkdir(parents=True, exist_ok=True)
+         log_path = log_dir / f"{int(time.time())}.log"
+         log_handle = log_path.open("w", buffering=1)
+@@ -485,3 +486,4 @@
+             "policy_ref": _inference_meta.get("policy_ref"),
+             "log_path": _inference_meta.get("log_path"),
+         }
++

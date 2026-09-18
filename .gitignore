@@ -1,0 +1,44 @@
+# Runtime, credentials and generated files
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+token
+stored_tokens
+credentials
+id_rsa
+id_ed25519
+*.pem
+*.key
+
+# Large datasets, models, installers and archives
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.mp4
+*.mov
+*.webm
+*.avi
+*.tar
+*.tar.gz
+*.zip
+*.whl
+*.exe
+*.dll
+*.so
+/data/
+/cache/
+/models/
+/outputs/
+/tmp/
+
+# Source snapshots intentionally keep the working frontend build and small
+# historical records; nested upstream ignore rules are handled when archiving.

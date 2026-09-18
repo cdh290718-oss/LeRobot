@@ -1,0 +1,13 @@
+--- backup/record-before-local-namespace-20260916-195917.py.bak
++++ source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/lelab/record.py
+@@ -253,6 +253,10 @@
+                 request.dataset_repo_id = f"{namespace}/{name}"
+             else:
+                 request.dataset_repo_id = re.sub(r"[^A-Za-z0-9._-]", "_", request.dataset_repo_id)
++                # LeRobot requires namespace/name even for local-only recording.
++                if request.push_to_hub:
++                    raise ValueError("Uploading requires a dataset ID in username/dataset format.")
++                request.dataset_repo_id = f"local/{request.dataset_repo_id}"
+         # Stamp the repo_id with a timestamp (matches lerobot-record CLI behavior),
+         # so each session lands in a unique directory and the frontend gets the
+         # final id back in the response and status payload.

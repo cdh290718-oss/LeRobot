@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LeLab 录制监控</title>
+<style>body{margin:0;background:#090d14;color:#e5e7eb;font:17px system-ui;padding:24px}main{max-width:1200px;margin:auto}a{color:#7dd3fc}section{background:#172131;border-radius:14px;padding:20px;margin:18px 0}.cameras{display:flex;gap:16px;flex-wrap:wrap}.cameras figure{margin:0;flex:1;min-width:280px}.cameras img{width:100%;max-height:55vh;object-fit:contain;background:#000}button{padding:14px 22px;margin:6px;border:0;border-radius:8px;font-size:17px;cursor:pointer}button:disabled{opacity:.4;cursor:default}#stop{background:#ef4444;color:white}#advance{background:#86efac}#message{white-space:pre-wrap;color:#fcd34d}small{color:#aab8ca}h1{font-size:26px}</style>
+<main><a href="/">返回首页</a><h1>录制监控与控制</h1>
+<p>此页接入正在运行的录制，不会重新启动录制；刷新后可继续查看。</p>
+<section><div id="status">正在读取后台状态…</div><p id="dataset"></p><p id="progress"></p>
+<button id="advance" disabled>结束本段并保存</button><button id="redo" disabled>丢弃本段并重录</button><button id="stop" disabled>停止整个录制</button>
+<p id="message" role="status"></p><small>完成一次示教后点“结束本段并保存”。当前软件在录制超时后会重录，不会自动保存该段。停止按钮可能需要等待后台结束处理。</small></section>
+<div id="cameras" class="cameras"></div></main>
+<script>
+let state=null,busy=false; const $=id=>document.getElementById(id);
+const phases={preparing:'正在初始化机械臂和相机',recording:'正在录制',resetting:'重置场景',stopping:'正在停止',completed:'录制已结束',error:'录制出错',idle:'当前没有录制'};
+function controls(){const c=state?.available_controls||{}; $('advance').disabled=busy||!c.exit_early||!['recording','resetting'].includes(state?.current_phase);$('redo').disabled=busy||!c.rerecord_episode;$('stop').disabled=busy||!c.stop_recording||state?.current_phase==='stopping';$('advance').textContent=state?.current_phase==='resetting'?'开始下一段':'结束本段并保存';}
+async function poll(){try{const r=await fetch('/recording-status',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);state=await r.json();$('status').textContent=phases[state.current_phase]||state.current_phase;$('dataset').textContent=state.dataset_repo_id||'';$('progress').textContent=state.recording_active?`第 ${state.current_episode||1} / ${state.total_episodes||'?'} 段 · 已保存 ${state.saved_episodes||0} 段 · 本阶段 ${state.phase_elapsed_seconds||0} / ${state.phase_time_limit_s||'?'} 秒`:'录制未运行。需要新建录制时，请返回首页 → Dataset → 创建数据集。';if(state.error)$('message').textContent=state.error;controls();
+const keys=state.recording_active&&['recording','resetting'].includes(state.current_phase)?state.cameras||[]:[];
+for(const f of [...$('cameras').children])if(!keys.includes(f.dataset.key)){f.querySelector('img').src='';f.remove()}
+for(const key of keys){if([...$('cameras').children].some(f=>f.dataset.key===key))continue;const f=document.createElement('figure');f.dataset.key=key;const cap=document.createElement('figcaption');cap.textContent='相机 '+key;const img=document.createElement('img');img.alt='相机 '+key;img.src='/camera-feed/'+encodeURIComponent(key);f.append(cap,img);$('cameras').append(f)}
+}catch(e){state=null;controls();$('status').textContent='暂时无法连接后台';$('message').textContent=String(e)}finally{setTimeout(poll,1000)}}
+async function action(endpoint){if(busy)return;busy=true;controls();try{const r=await fetch(endpoint,{method:'POST'});const d=await r.json();if(!r.ok||d.success===false)throw Error(d.message||'操作失败');$('message').textContent='指令已提交，等待后台完成。'}catch(e){$('message').textContent=String(e)}finally{busy=false;controls()}}
+$('advance').onclick=()=>action('/recording-exit-early');$('redo').onclick=()=>{if(confirm('丢弃当前这一段并重新示教？'))action('/recording-rerecord-episode')};$('stop').onclick=()=>action('/stop-recording');poll();
+</script></html>

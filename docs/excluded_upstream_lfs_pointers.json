@@ -1,0 +1,20 @@
+[
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/base_motor_holder_so101_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/base_so101_v2.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/motor_holder_so101_base_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/motor_holder_so101_wrist_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/moving_jaw_so101_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/rotation_pitch_so101_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/sts3215_03a_no_horn_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/sts3215_03a_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/under_arm_so101_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/upper_arm_so101_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/waveshare_mounting_plate_so101_v2.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/wrist_roll_follower_so101_v1.stl",
+  "source/lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80/frontend/public/so-101-urdf/meshes/wrist_roll_pitch_so101_v2.stl",
+  "source/lerobot-0.6.0/tests/artifacts/cameras/image_128x128.png",
+  "source/lerobot-0.6.0/tests/artifacts/cameras/image_160x120.png",
+  "source/lerobot-0.6.0/tests/artifacts/cameras/image_320x180.png",
+  "source/lerobot-0.6.0/tests/artifacts/cameras/image_480x270.png",
+  "source/lerobot-0.6.0/tests/artifacts/cameras/test_rs.bag"
+]

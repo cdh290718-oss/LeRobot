@@ -1,0 +1,54 @@
+{
+  "captured_at_utc": "2026-09-18T15:07:07.831840+00:00",
+  "task_root": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918",
+  "artifacts": [
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/training_state/rng_state.safetensors",
+      "bytes": 15708
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/training_state/optimizer_state.safetensors",
+      "bytes": 412659164
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/training_state/optimizer_param_groups.json",
+      "bytes": 8807
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/training_state/scheduler_state.json",
+      "bytes": 215
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/training_state/training_step.json",
+      "bytes": 66
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/policy_postprocessor.json",
+      "bytes": 660
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/model.safetensors",
+      "bytes": 906712520
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/config.json",
+      "bytes": 2574
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/train_config.json",
+      "bytes": 7523
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "bytes": 7472
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 7472
+    },
+    {
+      "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model/policy_preprocessor.json",
+      "bytes": 2033
+    }
+  ]
+}

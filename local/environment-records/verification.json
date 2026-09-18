@@ -1,0 +1,20 @@
+{
+  "packages": {
+    "lelab": "0.1.0",
+    "lerobot": "0.6.0",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "datasets": "4.8.5",
+    "av": "15.1.0",
+    "transformers": "5.5.4"
+  },
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "gpu_operation": "passed",
+  "server_import": "passed",
+  "smolvla_import": "passed",
+  "data_root": "G:\\LeRobot\\data",
+  "calibration_root": "G:\\LeRobot\\data\\calibration",
+  "robot_config_root": "G:\\LeRobot\\data\\robots",
+  "video_encode_decode_frames": 10
+}

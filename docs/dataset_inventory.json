@@ -1,0 +1,128 @@
+[
+  {
+    "repo_id": "ChomCUI/10_20260916_214311",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\10_20260916_214311",
+    "episodes": 5,
+    "frames": 3005,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/11_20260916_220529",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\11_20260916_220529",
+    "episodes": 5,
+    "frames": 3371,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/12_20260916_220919",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\12_20260916_220919",
+    "episodes": 5,
+    "frames": 3076,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/13_20260916_221419",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\13_20260916_221419",
+    "episodes": 10,
+    "frames": 6529,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/14_20260918_120729",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\14_20260918_120729",
+    "episodes": 12,
+    "frames": 7058,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/15_20260918_121827",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\15_20260918_121827",
+    "episodes": 2,
+    "frames": 860,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/16_20260918_121952",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\16_20260918_121952",
+    "episodes": 5,
+    "frames": 2692,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/17_20260918_122237",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\17_20260918_122237",
+    "episodes": 13,
+    "frames": 6882,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/18_20260918_124443",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\18_20260918_124443",
+    "episodes": 3,
+    "frames": 1542,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/20_20260918_130233",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\20_20260918_130233",
+    "episodes": 3,
+    "frames": 1814,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/22_20260918_131137",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\22_20260918_131137",
+    "episodes": 5,
+    "frames": 2985,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/23_20260918_132654",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\23_20260918_132654",
+    "episodes": 4,
+    "frames": 2338,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/24_20260918_133006",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\24_20260918_133006",
+    "episodes": 10,
+    "frames": 4619,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  },
+  {
+    "repo_id": "ChomCUI/25_20260918_133615",
+    "local_path": "G:\\LeRobot\\data\\ChomCUI\\25_20260918_133615",
+    "episodes": 10,
+    "frames": 4861,
+    "fps": 30,
+    "robot_type": "so_follower",
+    "codebase_version": "v3.0"
+  }
+]
