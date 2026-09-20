@@ -1,0 +1,1363 @@
+{
+  "motor_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll",
+    "gripper"
+  ],
+  "runs": [
+    {
+      "file": "20260919_125400_373_DryRun_bf16_return.zip",
+      "sha256": "f5b465e6e9c8cdab87e6432069adaa7d323778b48727f6ae2c13b8fa305ae245",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "dryrun",
+      "status": "completed",
+      "error": null,
+      "control_ticks": 295,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "write_attempts": 0,
+        "write_packets": 0,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 1334
+        },
+        "blocked_packets": 0,
+        "events": [],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": null,
+      "initial_raw": [
+        2000,
+        884,
+        3279,
+        2531,
+        2045,
+        2046
+      ],
+      "elapsed_seconds": 10.003199600003427,
+      "last_logged_elapsed_seconds": 9.979608200024813,
+      "model": {
+        "status": "stopped",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 18.337206700001843,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        },
+        "warmup_chunks": 5,
+        "chunks": 27,
+        "memory": {
+          "peak_allocated_mib": 928.26513671875,
+          "peak_reserved_mib": 958.0
+        }
+      },
+      "pipeline_ms": {
+        "count": 27,
+        "p50": 392.01329997740686,
+        "p95": 401.70727998483926,
+        "max": 403.58759998343885
+      },
+      "predict_chunk_ms": {
+        "count": 27,
+        "p50": 388.4255000157282,
+        "p95": 398.00504999875557,
+        "max": 400.07500001229346
+      },
+      "finite_predictions": true,
+      "control_hz": 29.560278729105466,
+      "interval_ms": {
+        "count": 295,
+        "p50": 33.81809999700636,
+        "p95": 34.09464001888409,
+        "max": 34.576800011564046
+      },
+      "work_ms": {
+        "count": 295,
+        "p50": 1.6574000183027238,
+        "p95": 2.916490010102281,
+        "max": 3.8425999809987843
+      },
+      "action_observation_age_ms": {
+        "count": 295,
+        "p50": 631.7976999853272,
+        "p95": 807.1830200235127,
+        "max": 845.7135999924503
+      },
+      "camera_age_ms": {
+        "1": {
+          "count": 295,
+          "p50": 16.37180001125671,
+          "p95": 32.071360005647875,
+          "max": 47.2719999961555
+        },
+        "3": {
+          "count": 295,
+          "p50": 18.12730001984164,
+          "p95": 33.45574000559282,
+          "max": 50.962000008439645
+        }
+      },
+      "tracking_error_deg_per_joint_max": [
+        4.131868131868132,
+        3.6923076923076925,
+        8.0,
+        8.0,
+        0.26373626373626374
+      ],
+      "measured_excursion_deg_per_joint_max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_excursion_deg_per_joint_max": [
+        4.131868131868132,
+        3.6923076923076925,
+        8.0,
+        8.0,
+        0.26373626373626374
+      ],
+      "last_measured_displacement_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "last_command_displacement_deg": [
+        -2.7252747252747254,
+        1.9340659340659343,
+        -8.0,
+        8.0,
+        -0.26373626373626374
+      ],
+      "clipped_percent": [
+        92.54237288135593,
+        99.66101694915255,
+        100.0,
+        100.0,
+        99.32203389830508,
+        99.32203389830508
+      ],
+      "max_raw_step": 1,
+      "gripper_command_fixed": true,
+      "expired_plan_ticks": 0,
+      "command_bounds_pass": true
+    },
+    {
+      "file": "20260919_125522_545_Execute_bf16_return.zip",
+      "sha256": "0477fd0226ff0084f43fb529dee01a5004f0940164ad3dbd8798472991297fd7",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 369, in main\n    initial = arm.enable_aligned(initial, stop.is_set)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\execution_kit\\control_core.py\", line 117, in enable_aligned\n    again = self.raw_read()\n            ^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\execution_kit\\control_core.py\", line 92, in raw_read\n    values = self.bus.sync_read('Present_Position', normalize=False)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\utils\\decorators.py\", line 29, in wrapper\n    return func(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 1157, in sync_read\n    raw_ids_values, _ = self._sync_read(\n                        ^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 1190, in _sync_read\n    raise ConnectionError(f\"{err_msg} {self.packet_handler.getTxRxResult(comm)}\")\nConnectionError: Failed to sync read 'Present_Position' on ids=[1, 2, 3, 4, 5, 6] after 1 tries. [TxRxResult] Incorrect status packet!\n",
+      "control_ticks": 0,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "write_attempts": 1,
+        "write_packets": 1,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 737,
+          "0x83": 1
+        },
+        "blocked_packets": 0,
+        "events": [],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": null,
+      "initial_raw": [
+        2000,
+        884,
+        3279,
+        2531,
+        2045,
+        2046
+      ],
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": null,
+      "model": {
+        "status": "stopped",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 13.089092499983963,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        },
+        "warmup_chunks": 5,
+        "chunks": 2,
+        "memory": {
+          "peak_allocated_mib": 928.26513671875,
+          "peak_reserved_mib": 958.0
+        }
+      },
+      "pipeline_ms": {
+        "count": 2,
+        "p50": 385.9356500179274,
+        "p95": 388.9439450184,
+        "max": 389.2782000184525
+      },
+      "predict_chunk_ms": {
+        "count": 2,
+        "p50": 382.134949992178,
+        "p95": 385.17771498009097,
+        "max": 385.51579997874796
+      },
+      "finite_predictions": true
+    },
+    {
+      "file": "20260919_125747_095_Execute_bf16_return.zip",
+      "sha256": "feb99eabede418ec5c4a8dcbb4c697c4294b6d6f3b2147554c7e9344e97d23f8",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 288, in main\n    raise RuntimeError('Torque is already enabled. Support the arm and run Release before another Execute.')\nRuntimeError: Torque is already enabled. Support the arm and run Release before another Execute.\n",
+      "control_ticks": 0,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "torque_after": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "write_attempts": 0,
+        "write_packets": 0,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 2
+        },
+        "blocked_packets": 0,
+        "events": [],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": null,
+      "initial_raw": null,
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": null
+    },
+    {
+      "file": "20260919_125836_702_Release_bf16_return.zip",
+      "sha256": "fc2793c02350ea46c5409029067e8f304498c88a5d13078b09a59755b6cb9912",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "release",
+      "status": "released",
+      "error": null,
+      "control_ticks": 0,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "write_attempts": 1,
+        "write_packets": 1,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 3,
+          "0x83": 1
+        },
+        "blocked_packets": 0,
+        "events": [
+          {
+            "event": "torque_released"
+          }
+        ],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": null,
+      "initial_raw": null,
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": null
+    },
+    {
+      "file": "20260919_125904_944_Execute_bf16_return.zip",
+      "sha256": "55be148441bf7ff7090bfa64566d42ca05fe45be186f768558ea983383eb3289",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 338, in main\n    raise RuntimeError('Arm moved during model preflight; rerun from a stable supported position')\nRuntimeError: Arm moved during model preflight; rerun from a stable supported position\n",
+      "control_ticks": 0,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "write_attempts": 0,
+        "write_packets": 0,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 686
+        },
+        "blocked_packets": 0,
+        "events": [],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": null,
+      "initial_raw": [
+        2000,
+        884,
+        3279,
+        2531,
+        2045,
+        2046
+      ],
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": null,
+      "model": {
+        "status": "loading",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 13.259521400002996,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        }
+      }
+    },
+    {
+      "file": "20260919_130110_587_Execute_bf16_return.zip",
+      "sha256": "600df87ba9ec98a2bd106caec9d36a5403cf5aaae5cabf2199a5dcd12dbe0248",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "completed",
+      "error": null,
+      "control_ticks": 295,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "write_attempts": 298,
+        "write_packets": 298,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 1031,
+          "0x83": 298
+        },
+        "blocked_packets": 0,
+        "events": [
+          {
+            "event": "aligned_then_enabled",
+            "time": 169964.4818516,
+            "raw": [
+              1972,
+              779,
+              3273,
+              2876,
+              2045,
+              2046
+            ]
+          },
+          {
+            "event": "stop_hold",
+            "goal_readback_confirmed": true,
+            "raw_goal": [
+              2008,
+              779,
+              3210,
+              2928,
+              2048,
+              2046
+            ],
+            "torque": {
+              "shoulder_pan": 1,
+              "shoulder_lift": 1,
+              "elbow_flex": 1,
+              "wrist_flex": 1,
+              "wrist_roll": 1,
+              "gripper": 1
+            },
+            "all_torque_enabled": true,
+            "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+          }
+        ],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": {
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          2008,
+          779,
+          3210,
+          2928,
+          2048,
+          2046
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "all_torque_enabled": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      },
+      "initial_raw": [
+        1972,
+        779,
+        3273,
+        2876,
+        2045,
+        2046
+      ],
+      "elapsed_seconds": 10.001248699991265,
+      "last_logged_elapsed_seconds": 9.977205300005153,
+      "model": {
+        "status": "stopped",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 13.036940799996955,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        },
+        "warmup_chunks": 5,
+        "chunks": 28,
+        "memory": {
+          "peak_allocated_mib": 928.26513671875,
+          "peak_reserved_mib": 958.0
+        }
+      },
+      "pipeline_ms": {
+        "count": 28,
+        "p50": 382.8887000126997,
+        "p95": 394.1734949912643,
+        "max": 399.2762000125367
+      },
+      "predict_chunk_ms": {
+        "count": 28,
+        "p50": 379.0265999850817,
+        "p95": 390.4251399988425,
+        "max": 395.2243000094313
+      },
+      "finite_predictions": true,
+      "control_hz": 29.567397996696297,
+      "interval_ms": {
+        "count": 295,
+        "p50": 33.80919998744503,
+        "p95": 34.11793000414036,
+        "max": 34.56640001968481
+      },
+      "work_ms": {
+        "count": 295,
+        "p50": 1.9124999816995114,
+        "p95": 3.6884699919028208,
+        "max": 4.36039999476634
+      },
+      "action_observation_age_ms": {
+        "count": 295,
+        "p50": 617.5580999988597,
+        "p95": 788.0989600089379,
+        "max": 819.0927999967244
+      },
+      "camera_age_ms": {
+        "1": {
+          "count": 295,
+          "p50": 16.24749999609776,
+          "p95": 32.23553999850992,
+          "max": 47.43539998889901
+        },
+        "3": {
+          "count": 295,
+          "p50": 16.06650001485832,
+          "p95": 33.056470000883564,
+          "max": 46.57399997813627
+        }
+      },
+      "tracking_error_deg_per_joint_max": [
+        0.6153846153846154,
+        0.9670329670329672,
+        3.6043956043956045,
+        1.2307692307692308,
+        0.5274725274725275
+      ],
+      "measured_excursion_deg_per_joint_max": [
+        3.164835164835165,
+        0.17582417582417584,
+        5.538461538461539,
+        4.835164835164836,
+        0.3516483516483517
+      ],
+      "command_excursion_deg_per_joint_max": [
+        3.6043956043956045,
+        0.9670329670329672,
+        8.0,
+        5.978021978021978,
+        0.5274725274725275
+      ],
+      "last_measured_displacement_deg": [
+        3.164835164835165,
+        0.0,
+        -5.538461538461539,
+        4.571428571428572,
+        0.26373626373626374
+      ],
+      "last_command_displacement_deg": [
+        3.252747252747253,
+        -0.6153846153846154,
+        -8.0,
+        4.483516483516484,
+        0.5274725274725275
+      ],
+      "clipped_percent": [
+        59.66101694915255,
+        94.57627118644068,
+        96.61016949152543,
+        87.79661016949153,
+        97.6271186440678,
+        94.57627118644068
+      ],
+      "max_raw_step": 1,
+      "gripper_command_fixed": true,
+      "expired_plan_ticks": 0,
+      "command_bounds_pass": true,
+      "hold_minus_last_command_deg": [
+        -0.08791208791208792,
+        0.6153846153846154,
+        2.4615384615384617,
+        0.08791208791208792,
+        -0.26373626373626374
+      ]
+    },
+    {
+      "file": "20260919_130228_831_Execute_bf16_return.zip",
+      "sha256": "f85b4158c9609a10c01469d61f63fc1d7610cc4e0847477b38cad7f05b251230",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "completed",
+      "error": null,
+      "control_ticks": 295,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "write_attempts": 298,
+        "write_packets": 298,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 1033,
+          "0x83": 298
+        },
+        "blocked_packets": 0,
+        "events": [
+          {
+            "event": "aligned_then_enabled",
+            "time": 170042.794685,
+            "raw": [
+              1970,
+              779,
+              3274,
+              2706,
+              2047,
+              2046
+            ]
+          },
+          {
+            "event": "stop_hold",
+            "goal_readback_confirmed": true,
+            "raw_goal": [
+              1944,
+              840,
+              3215,
+              2796,
+              2047,
+              2046
+            ],
+            "torque": {
+              "shoulder_pan": 1,
+              "shoulder_lift": 1,
+              "elbow_flex": 1,
+              "wrist_flex": 1,
+              "wrist_roll": 1,
+              "gripper": 1
+            },
+            "all_torque_enabled": true,
+            "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+          }
+        ],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": {
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          1944,
+          840,
+          3215,
+          2796,
+          2047,
+          2046
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "all_torque_enabled": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      },
+      "initial_raw": [
+        1970,
+        779,
+        3274,
+        2706,
+        2047,
+        2046
+      ],
+      "elapsed_seconds": 10.00072799998452,
+      "last_logged_elapsed_seconds": 9.976820299983956,
+      "model": {
+        "status": "stopped",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 13.140878099977272,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        },
+        "warmup_chunks": 5,
+        "chunks": 27,
+        "memory": {
+          "peak_allocated_mib": 928.26513671875,
+          "peak_reserved_mib": 958.0
+        }
+      },
+      "pipeline_ms": {
+        "count": 27,
+        "p50": 387.55549999768846,
+        "p95": 399.8492299899226,
+        "max": 402.8196000144817
+      },
+      "predict_chunk_ms": {
+        "count": 27,
+        "p50": 383.9735999936238,
+        "p95": 395.88838999625295,
+        "max": 398.9529000245966
+      },
+      "finite_predictions": true,
+      "control_hz": 29.56853898636166,
+      "interval_ms": {
+        "count": 295,
+        "p50": 33.81080002873205,
+        "p95": 34.102149997488596,
+        "max": 34.365100000286475
+      },
+      "work_ms": {
+        "count": 295,
+        "p50": 1.9315000099595636,
+        "p95": 3.4219099965412174,
+        "max": 4.298899992136285
+      },
+      "action_observation_age_ms": {
+        "count": 295,
+        "p50": 622.1222000021953,
+        "p95": 800.9079700015718,
+        "max": 850.9252000076231
+      },
+      "camera_age_ms": {
+        "1": {
+          "count": 295,
+          "p50": 16.569600004004315,
+          "p95": 32.27629999164492,
+          "max": 46.64119999506511
+        },
+        "3": {
+          "count": 295,
+          "p50": 16.789199988124892,
+          "p95": 32.485939998878166,
+          "max": 47.82340000383556
+        }
+      },
+      "tracking_error_deg_per_joint_max": [
+        0.6153846153846154,
+        0.8791208791208792,
+        3.7802197802197806,
+        0.4395604395604396,
+        0.4395604395604396
+      ],
+      "measured_excursion_deg_per_joint_max": [
+        2.5494505494505497,
+        5.362637362637363,
+        5.186813186813187,
+        7.912087912087912,
+        0.0
+      ],
+      "command_excursion_deg_per_joint_max": [
+        2.8131868131868134,
+        5.714285714285714,
+        8.0,
+        8.0,
+        0.4395604395604396
+      ],
+      "last_measured_displacement_deg": [
+        -2.285714285714286,
+        5.362637362637363,
+        -5.186813186813187,
+        7.912087912087912,
+        0.0
+      ],
+      "last_command_displacement_deg": [
+        -2.5494505494505497,
+        5.362637362637363,
+        -8.0,
+        8.0,
+        -0.4395604395604396
+      ],
+      "clipped_percent": [
+        80.0,
+        96.27118644067797,
+        99.66101694915255,
+        99.32203389830508,
+        99.32203389830508,
+        97.28813559322033
+      ],
+      "max_raw_step": 1,
+      "gripper_command_fixed": true,
+      "expired_plan_ticks": 0,
+      "command_bounds_pass": true,
+      "hold_minus_last_command_deg": [
+        0.26373626373626374,
+        0.0,
+        2.8131868131868134,
+        -0.08791208791208792,
+        0.4395604395604396
+      ]
+    },
+    {
+      "file": "20260919_130337_936_Release_bf16_return.zip",
+      "sha256": "d775f3b7220183e96f56427a7fab45a1eed30dfef461c7365ca0c9cb5d449d63",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "release",
+      "status": "released",
+      "error": null,
+      "control_ticks": 0,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "write_attempts": 1,
+        "write_packets": 1,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 3,
+          "0x83": 1
+        },
+        "blocked_packets": 0,
+        "events": [
+          {
+            "event": "torque_released"
+          }
+        ],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": null,
+      "initial_raw": null,
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": null
+    },
+    {
+      "file": "20260919_130403_715_Execute_bf16_return.zip",
+      "sha256": "3cf656328d70d11148951fad5b92729613b3482c436312449c148b3d98a9a77f",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 398, in main\n    limiter.check_measured(raw, enforce_tracking=args.mode!='dryrun')\n  File \"G:\\LeRobot\\execution_kit\\control_core.py\", line 202, in check_measured\n    raise RuntimeError('Measured tracking error exceeds 4 degrees')\nRuntimeError: Measured tracking error exceeds 4 degrees\n",
+      "control_ticks": 49,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "write_attempts": 52,
+        "write_packets": 52,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 791,
+          "0x83": 52
+        },
+        "blocked_packets": 0,
+        "events": [
+          {
+            "event": "aligned_then_enabled",
+            "time": 170137.4379804,
+            "raw": [
+              1946,
+              844,
+              3278,
+              2797,
+              2048,
+              2046
+            ]
+          },
+          {
+            "event": "stop_hold",
+            "goal_readback_confirmed": true,
+            "raw_goal": [
+              1951,
+              830,
+              3275,
+              2844,
+              2047,
+              2046
+            ],
+            "torque": {
+              "shoulder_pan": 1,
+              "shoulder_lift": 1,
+              "elbow_flex": 1,
+              "wrist_flex": 1,
+              "wrist_roll": 1,
+              "gripper": 1
+            },
+            "all_torque_enabled": true,
+            "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+          }
+        ],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": {
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          1951,
+          830,
+          3275,
+          2844,
+          2047,
+          2046
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "all_torque_enabled": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      },
+      "initial_raw": [
+        1946,
+        844,
+        3278,
+        2797,
+        2048,
+        2046
+      ],
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": 1.6567173000075854,
+      "model": {
+        "status": "stopped",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 13.039121600013459,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        },
+        "warmup_chunks": 5,
+        "chunks": 6,
+        "memory": {
+          "peak_allocated_mib": 928.26513671875,
+          "peak_reserved_mib": 958.0
+        }
+      },
+      "pipeline_ms": {
+        "count": 6,
+        "p50": 390.5005500128027,
+        "p95": 398.0669250158826,
+        "max": 399.0320000157226
+      },
+      "predict_chunk_ms": {
+        "count": 6,
+        "p50": 386.8664499896113,
+        "p95": 394.3101249897154,
+        "max": 395.17559998785146
+      },
+      "finite_predictions": true,
+      "control_hz": 29.576560828920933,
+      "interval_ms": {
+        "count": 49,
+        "p50": 33.80260002450086,
+        "p95": 34.05950000160374,
+        "max": 34.1109000146389
+      },
+      "work_ms": {
+        "count": 49,
+        "p50": 1.9170000159647316,
+        "p95": 2.9969200084451577,
+        "max": 3.716000006534159
+      },
+      "action_observation_age_ms": {
+        "count": 49,
+        "p50": 620.9224000049289,
+        "p95": 793.0267399933655,
+        "max": 805.1367000152823
+      },
+      "camera_age_ms": {
+        "1": {
+          "count": 49,
+          "p50": 22.42870000191033,
+          "p95": 33.805919997394085,
+          "max": 45.05399998743087
+        },
+        "3": {
+          "count": 49,
+          "p50": 13.590599992312491,
+          "p95": 35.54004000034182,
+          "max": 47.666800004662946
+        }
+      },
+      "tracking_error_deg_per_joint_max": [
+        0.5274725274725275,
+        0.9670329670329672,
+        3.956043956043956,
+        0.4395604395604396,
+        0.4395604395604396
+      ],
+      "measured_excursion_deg_per_joint_max": [
+        0.4395604395604396,
+        1.2307692307692308,
+        0.26373626373626374,
+        3.956043956043956,
+        0.08791208791208792
+      ],
+      "command_excursion_deg_per_joint_max": [
+        0.7912087912087913,
+        1.9340659340659343,
+        4.307692307692308,
+        4.307692307692308,
+        0.5274725274725275
+      ],
+      "last_measured_displacement_deg": [
+        0.4395604395604396,
+        -1.2307692307692308,
+        -0.26373626373626374,
+        3.956043956043956,
+        -0.08791208791208792
+      ],
+      "last_command_displacement_deg": [
+        0.5274725274725275,
+        -1.142857142857143,
+        -4.307692307692308,
+        4.307692307692308,
+        -0.26373626373626374
+      ],
+      "clipped_percent": [
+        81.63265306122449,
+        100.0,
+        100.0,
+        100.0,
+        95.91836734693877,
+        100.0
+      ],
+      "max_raw_step": 1,
+      "gripper_command_fixed": true,
+      "expired_plan_ticks": 0,
+      "command_bounds_pass": true,
+      "hold_minus_last_command_deg": [
+        -0.08791208791208792,
+        -0.08791208791208792,
+        4.043956043956045,
+        -0.17582417582417584,
+        0.17582417582417584
+      ]
+    },
+    {
+      "file": "20260919_130640_906_Execute_bf16_return.zip",
+      "sha256": "e05645225fb8281b94c54d006217429c3d0299c903604300d826a7b9e6c62ee3",
+      "crc": "passed",
+      "code_sha_match": true,
+      "mode": "execute",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 398, in main\n    limiter.check_measured(raw, enforce_tracking=args.mode!='dryrun')\n  File \"G:\\LeRobot\\execution_kit\\control_core.py\", line 202, in check_measured\n    raise RuntimeError('Measured tracking error exceeds 4 degrees')\nRuntimeError: Measured tracking error exceeds 4 degrees\n",
+      "control_ticks": 53,
+      "bus": {
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "write_attempts": 56,
+        "write_packets": 56,
+        "packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 785,
+          "0x83": 56
+        },
+        "blocked_packets": 0,
+        "events": [
+          {
+            "event": "aligned_then_enabled",
+            "time": 170294.570495,
+            "raw": [
+              1965,
+              779,
+              3275,
+              2704,
+              2045,
+              2046
+            ]
+          },
+          {
+            "event": "stop_hold",
+            "goal_readback_confirmed": true,
+            "raw_goal": [
+              1952,
+              788,
+              3268,
+              2755,
+              2045,
+              2046
+            ],
+            "torque": {
+              "shoulder_pan": 1,
+              "shoulder_lift": 1,
+              "elbow_flex": 1,
+              "wrist_flex": 1,
+              "wrist_roll": 1,
+              "gripper": 1
+            },
+            "all_torque_enabled": true,
+            "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+          }
+        ],
+        "normal_robot_connect_called": false
+      },
+      "stop_hold": {
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          1952,
+          788,
+          3268,
+          2755,
+          2045,
+          2046
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "all_torque_enabled": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      },
+      "initial_raw": [
+        1965,
+        779,
+        3275,
+        2704,
+        2045,
+        2046
+      ],
+      "elapsed_seconds": null,
+      "last_logged_elapsed_seconds": 1.7929252000176348,
+      "model": {
+        "status": "stopped",
+        "has_hardware_access": false,
+        "model": {
+          "checkpoint": "010000",
+          "precision": "bf16",
+          "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+          "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+          "load_seconds": 12.964717899973039,
+          "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "torch": "2.10.0+cu128",
+          "strict_load": true,
+          "unnormalizer_probe": true
+        },
+        "warmup_chunks": 5,
+        "chunks": 6,
+        "memory": {
+          "peak_allocated_mib": 928.26513671875,
+          "peak_reserved_mib": 958.0
+        }
+      },
+      "pipeline_ms": {
+        "count": 6,
+        "p50": 379.2063500150107,
+        "p95": 381.3049499949557,
+        "max": 381.6727999947034
+      },
+      "predict_chunk_ms": {
+        "count": 6,
+        "p50": 375.5152499943506,
+        "p95": 377.2982500013313,
+        "max": 377.6058999937959
+      },
+      "finite_predictions": true,
+      "control_hz": 29.560630861498687,
+      "interval_ms": {
+        "count": 53,
+        "p50": 33.84389998973347,
+        "p95": 34.13037999998778,
+        "max": 34.18209997471422
+      },
+      "work_ms": {
+        "count": 53,
+        "p50": 2.0457000064197928,
+        "p95": 3.8602600048761815,
+        "max": 4.204099997878075
+      },
+      "action_observation_age_ms": {
+        "count": 53,
+        "p50": 621.7543999955524,
+        "p95": 783.2233400025871,
+        "max": 826.7670999921393
+      },
+      "camera_age_ms": {
+        "1": {
+          "count": 53,
+          "p50": 16.36129998951219,
+          "p95": 34.89872000063769,
+          "max": 47.198699990985915
+        },
+        "3": {
+          "count": 53,
+          "p50": 19.978300028014928,
+          "p95": 34.03304001549258,
+          "max": 46.30999997607432
+        }
+      },
+      "tracking_error_deg_per_joint_max": [
+        0.6153846153846154,
+        0.8791208791208792,
+        3.956043956043956,
+        0.4395604395604396,
+        0.26373626373626374
+      ],
+      "measured_excursion_deg_per_joint_max": [
+        1.4065934065934067,
+        0.7032967032967034,
+        0.6153846153846154,
+        4.21978021978022,
+        0.0
+      ],
+      "command_excursion_deg_per_joint_max": [
+        1.6703296703296704,
+        1.4945054945054945,
+        4.65934065934066,
+        4.65934065934066,
+        0.26373626373626374
+      ],
+      "last_measured_displacement_deg": [
+        -1.142857142857143,
+        0.7032967032967034,
+        -0.6153846153846154,
+        4.21978021978022,
+        0.0
+      ],
+      "last_command_displacement_deg": [
+        -1.3186813186813189,
+        1.4945054945054945,
+        -4.65934065934066,
+        4.65934065934066,
+        -0.26373626373626374
+      ],
+      "clipped_percent": [
+        96.22641509433963,
+        98.11320754716981,
+        100.0,
+        100.0,
+        100.0,
+        94.33962264150944
+      ],
+      "max_raw_step": 1,
+      "gripper_command_fixed": true,
+      "expired_plan_ticks": 0,
+      "command_bounds_pass": true,
+      "hold_minus_last_command_deg": [
+        0.17582417582417584,
+        -0.7032967032967034,
+        4.043956043956045,
+        -0.17582417582417584,
+        0.26373626373626374
+      ]
+    }
+  ]
+}

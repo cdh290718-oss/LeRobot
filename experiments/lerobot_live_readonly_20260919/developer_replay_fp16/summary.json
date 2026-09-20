@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "mode": "replay",
+  "created_utc": "2026-09-19T04:04:21.096806+00:00",
+  "python": "3.12.13 (main, Apr 14 2026, 14:29:00) [Clang 22.1.3 ]",
+  "executable": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/venv/bin/python",
+  "arguments": {
+    "mode": "replay",
+    "lerobot_root": "G:/LeRobot",
+    "offline_kit": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit",
+    "model_dir": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model",
+    "robot_config": "G:/LeRobot/data/robots/lerobot.json",
+    "calibration": "G:/LeRobot/data/calibration/robots/so_follower/lerobot.json",
+    "port": "None",
+    "precision": "fp16",
+    "seconds": "30.0",
+    "max_chunks": "3",
+    "no_browser": "True",
+    "gpu_memory_fraction": "0.15",
+    "output": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/developer_replay_fp16"
+  },
+  "source_sha256": {
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "test_readonly.py": "cd0563fd78cc6b751ffb9646c2126ef9078803933300fc5b3dacd23abfa7e173",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+  },
+  "motor_action_execution": false,
+  "power_start": {
+    "available": false
+  },
+  "power_scheme": null,
+  "limits": "Read-only predictions, no action execution. Camera timestamps are software arrival times, not exposure times. Replay input ages are artificial.",
+  "packages": {
+    "torch": "2.7.1+cu118",
+    "lerobot": "0.6.0",
+    "opencv-python-headless": "4.13.0.92",
+    "feetech-servo-sdk": "not installed",
+    "pyserial": "3.5"
+  },
+  "model": {
+    "checkpoint": "010000",
+    "precision": "fp16",
+    "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model",
+    "load_seconds": 21.536391727626324,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "torch": "2.7.1+cu118",
+    "strict_load": true,
+    "unnormalizer_probe": true,
+    "warmup_calls": 5
+  },
+  "elapsed_capture_seconds": 2.10745045915246,
+  "gpu_memory": {
+    "peak_allocated_mib": 935.52294921875,
+    "peak_reserved_mib": 1002.0
+  },
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/09/19 04:04:21.184, P0, 2 %, 27230 MiB, 53819 MiB, 72.39 W, 400.00 W, 35, 1155 MHz, 1593 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 0
+  },
+  "power_end": {
+    "available": false
+  },
+  "observations": 3,
+  "timing_summary": {
+    "chunk_ms": {
+      "count": 3,
+      "p50": 473.7715981900692,
+      "p95": 1047.8230107575655,
+      "max": 1111.6065010428429,
+      "mean": 656.6545243064562
+    },
+    "pipeline_ms": {
+      "count": 3,
+      "p50": 481.2791980803013,
+      "p95": 1099.8931866139174,
+      "max": 1168.6280742287636,
+      "mean": 680.945078531901
+    },
+    "loop_work_ms": {
+      "count": 3,
+      "p50": 486.90204322338104,
+      "p95": 1106.4255990087986,
+      "max": 1175.2615496516228,
+      "mean": 700.42551557223
+    },
+    "state_age_ms": {
+      "count": 3,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "pair_timestamp_skew_ms": {
+      "count": 3,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "input_age_at_result_ms": {
+      "count": 3,
+      "p50": 481.67886584997177,
+      "p95": 1100.293169543147,
+      "max": 1169.0280921757221,
+      "mean": 681.3427433371544
+    }
+  },
+  "camera_age_ms": {
+    "1": {
+      "count": 3,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "3": {
+      "count": 3,
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    }
+  },
+  "nvidia_smi_after": {
+    "returncode": 0,
+    "stdout": "memory.used [MiB], memory.free [MiB]\n28750 MiB, 52300 MiB\n",
+    "stderr": ""
+  }
+}

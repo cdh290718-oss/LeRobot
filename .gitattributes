@@ -10,3 +10,7 @@
 *.webp binary
 *.pdf binary
 *.docx binary
+
+# Preserve experiment sample and return archive bytes.
+*.npz binary
+*.zip binary

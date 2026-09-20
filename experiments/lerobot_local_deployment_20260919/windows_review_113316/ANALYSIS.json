@@ -1,0 +1,408 @@
+{
+  "source_zip": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/20260919_113316_962_Run_return.zip",
+  "source_sha256": "061cb8ee383a521e392d39a3db366421cf37ab6f66a94f6114dc435da610ca31",
+  "runs": {
+    "006000_fp16": {
+      "status": "passed",
+      "recomputed_normalized_mse": 0.3090931101103238,
+      "recomputed_mae_per_joint": [
+        2.90042203587113,
+        10.472261043561227,
+        11.030672947193185,
+        5.17429775353634,
+        3.89009449037187,
+        1.922945547284502
+      ],
+      "episode_mse": {
+        "56": 0.18234290429438202,
+        "57": 0.28862491529818235,
+        "58": 0.20487434369629215,
+        "59": 0.22356224035258537,
+        "60": 0.43748081579142667,
+        "61": 0.6590493056120705,
+        "62": 0.2875844141578939,
+        "63": 0.0816604408802966,
+        "64": 0.22374419763921746,
+        "65": 0.6560014631445812,
+        "66": 0.1550991703466337
+      },
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 10.316399988369085,
+          "p95": 12.363035000453237,
+          "mean": 10.485019997577183
+        },
+        "chunk_ms": {
+          "p50": 843.9025500119897,
+          "p95": 897.3419200046919,
+          "mean": 850.1894500022172
+        },
+        "post_ms": {
+          "p50": 0.28574999305419624,
+          "p95": 0.4018049818114376,
+          "mean": 0.31878399895504117
+        },
+        "pipeline_ms": {
+          "p50": 854.6502499957569,
+          "p95": 909.118000009039,
+          "mean": 860.9932539987494
+        }
+      },
+      "load_seconds": 23.51956240000436,
+      "cold_pipeline_ms": 2499.8168000020087,
+      "steady_memory": {
+        "peak_allocated_mib": 936.5234375,
+        "peak_reserved_mib": 1002.0,
+        "current_allocated_mib": 900.28076171875,
+        "device_free_mib": 5916.0,
+        "device_total_mib": 8150.5625
+      },
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n3148 MiB, 4663 MiB\n",
+        "stderr": ""
+      },
+      "windows_vs_developer_mae_per_joint": [
+        0.006328186790148418,
+        0.02365461407285748,
+        0.020959946603486032,
+        0.00954200282241359,
+        0.006740967468781904,
+        0.003530365770513361
+      ],
+      "windows_vs_developer_max_abs": 0.17498016357421875,
+      "saved_unnormalizer_probe_passed": true
+    },
+    "006000_bf16": {
+      "status": "passed",
+      "recomputed_normalized_mse": 0.30977198439534576,
+      "recomputed_mae_per_joint": [
+        2.9025240890636588,
+        10.493259087430708,
+        11.067584549791434,
+        5.191913912224047,
+        3.8938873392478985,
+        1.9276576529488418
+      ],
+      "episode_mse": {
+        "56": 0.18168987697421063,
+        "57": 0.290299106379414,
+        "58": 0.20485812862334232,
+        "59": 0.22439517841418163,
+        "60": 0.4433488252468867,
+        "61": 0.6534667703255661,
+        "62": 0.2912687038427274,
+        "63": 0.08150206288468989,
+        "64": 0.22221336261763042,
+        "65": 0.6585145419127891,
+        "66": 0.15593527112736527
+      },
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 10.140550002688542,
+          "p95": 12.189115001820026,
+          "mean": 10.07606599945575
+        },
+        "chunk_ms": {
+          "p50": 784.6839999983786,
+          "p95": 828.500594983052,
+          "mean": 738.2337239995832
+        },
+        "post_ms": {
+          "p50": 0.28670000028796494,
+          "p95": 0.38290999509626994,
+          "mean": 0.30640499957371503
+        },
+        "pipeline_ms": {
+          "p50": 795.1071499846876,
+          "p95": 841.0033450039919,
+          "mean": 748.6161949986126
+        }
+      },
+      "load_seconds": 23.868097400001716,
+      "cold_pipeline_ms": 2073.017000016989,
+      "steady_memory": {
+        "peak_allocated_mib": 928.265625,
+        "peak_reserved_mib": 958.0,
+        "current_allocated_mib": 900.28076171875,
+        "device_free_mib": 5960.0,
+        "device_total_mib": 8150.5625
+      },
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n3109 MiB, 4702 MiB\n",
+        "stderr": ""
+      },
+      "windows_vs_developer_mae_per_joint": [
+        0.028766213231014484,
+        0.11947163899739584,
+        0.10972649776574338,
+        0.04341669024843158,
+        0.03192380738980842,
+        0.016173114921107436
+      ],
+      "windows_vs_developer_max_abs": 0.9272613525390625,
+      "saved_unnormalizer_probe_passed": true
+    },
+    "010000_fp16": {
+      "status": "passed",
+      "recomputed_normalized_mse": 0.24500577073344754,
+      "recomputed_mae_per_joint": [
+        2.4589651800646926,
+        9.021052970335338,
+        8.831700644481815,
+        4.163374344796845,
+        3.6748787574018493,
+        1.6765888234702024
+      ],
+      "episode_mse": {
+        "56": 0.1783176427194833,
+        "57": 0.23820360833121432,
+        "58": 0.19152659410054332,
+        "59": 0.16889461697803176,
+        "60": 0.3169796775247772,
+        "61": 0.45732564215763993,
+        "62": 0.1468313223559435,
+        "63": 0.06320981608087209,
+        "64": 0.12522547916344728,
+        "65": 0.6857215354253164,
+        "66": 0.12282754323065363
+      },
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 6.353000004310161,
+          "p95": 11.73422500869492,
+          "mean": 7.53673899860587
+        },
+        "chunk_ms": {
+          "p50": 414.3291000073077,
+          "p95": 928.6804400064284,
+          "mean": 537.5473840016639
+        },
+        "post_ms": {
+          "p50": 0.18799999088514596,
+          "p95": 0.37585000391118223,
+          "mean": 0.2339009995921515
+        },
+        "pipeline_ms": {
+          "p50": 421.2530500080902,
+          "p95": 939.7937000030652,
+          "mean": 545.3180239998619
+        }
+      },
+      "load_seconds": 23.801578899991,
+      "cold_pipeline_ms": 2327.2948999947403,
+      "steady_memory": {
+        "peak_allocated_mib": 936.5234375,
+        "peak_reserved_mib": 1002.0,
+        "current_allocated_mib": 900.28076171875,
+        "device_free_mib": 5916.0,
+        "device_total_mib": 8150.5625
+      },
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n3284 MiB, 4527 MiB\n",
+        "stderr": ""
+      },
+      "windows_vs_developer_mae_per_joint": [
+        0.007474556357571573,
+        0.026556669293027937,
+        0.025405271125562262,
+        0.009745869492039537,
+        0.006465950373447302,
+        0.004362449790492202
+      ],
+      "windows_vs_developer_max_abs": 0.2871532440185547,
+      "saved_unnormalizer_probe_passed": true
+    },
+    "010000_bf16": {
+      "status": "passed",
+      "recomputed_normalized_mse": 0.2456047749819837,
+      "recomputed_mae_per_joint": [
+        2.4634160644538476,
+        9.032854577871886,
+        8.869124695015225,
+        4.179860326593572,
+        3.6760068909733583,
+        1.6791430394938498
+      ],
+      "episode_mse": {
+        "56": 0.17807531826452908,
+        "57": 0.2381446671346912,
+        "58": 0.19094349440481875,
+        "59": 0.16952513775973221,
+        "60": 0.32448167406316,
+        "61": 0.45573864834881106,
+        "62": 0.1472064600245014,
+        "63": 0.06366204216985913,
+        "64": 0.12479235407107293,
+        "65": 0.6863710964731864,
+        "66": 0.12271163208745829
+      },
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 9.801049993257038,
+          "p95": 12.511939990508836,
+          "mean": 8.738756001112051
+        },
+        "chunk_ms": {
+          "p50": 748.8812500087079,
+          "p95": 817.6963049787446,
+          "mean": 610.3898279991699
+        },
+        "post_ms": {
+          "p50": 0.27910000062547624,
+          "p95": 0.4389949899632483,
+          "mean": 0.2736399997957051
+        },
+        "pipeline_ms": {
+          "p50": 759.1359999933047,
+          "p95": 829.0853549813619,
+          "mean": 619.4022240000777
+        }
+      },
+      "load_seconds": 12.671291300008306,
+      "cold_pipeline_ms": 1228.7765000073705,
+      "steady_memory": {
+        "peak_allocated_mib": 928.265625,
+        "peak_reserved_mib": 958.0,
+        "current_allocated_mib": 900.28076171875,
+        "device_free_mib": 5960.0,
+        "device_total_mib": 8150.5625
+      },
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n3207 MiB, 4604 MiB\n",
+        "stderr": ""
+      },
+      "windows_vs_developer_mae_per_joint": [
+        0.026886150656324444,
+        0.11248907840613163,
+        0.10984786756110913,
+        0.04063031976873224,
+        0.03125040581732085,
+        0.01656572992151434
+      ],
+      "windows_vs_developer_max_abs": 0.9332427978515625,
+      "saved_unnormalizer_probe_passed": true
+    }
+  },
+  "comparisons": {
+    "fp16": {
+      "mse_relative_reduction_10k_vs_6k": 0.2073399156454887,
+      "episodes_with_lower_10k_error": [
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "66"
+      ],
+      "total_episodes": 11
+    },
+    "bf16": {
+      "mse_relative_reduction_10k_vs_6k": 0.20714335913433934,
+      "episodes_with_lower_10k_error": [
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "66"
+      ],
+      "total_episodes": 11
+    }
+  },
+  "limits": [
+    "33 held-out frames from 11 episodes, not a full validation set.",
+    "100 latency calls repeat the same 33 inputs; not 100 distinct validation samples.",
+    "Raw per-call timing and GPU clock/power telemetry are absent; cannot identify latency fluctuation cause.",
+    "No camera, serial, video recording, action execution or grasp-success measurements."
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "hf_home": "G:\\LeRobot\\cache\\huggingface",
+    "packages": {
+      "torch": "2.10.0+cu128",
+      "torchvision": "0.25.0+cu128",
+      "torchcodec": "0.10.0",
+      "lerobot": "0.6.0",
+      "transformers": "5.5.4",
+      "numpy": "2.2.6",
+      "safetensors": "0.8.0",
+      "huggingface_hub": "1.31.0",
+      "av": "15.1.0",
+      "accelerate": "1.15.0"
+    },
+    "pip_check": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "G:\\LeRobot\\.venv\\Scripts\\python.exe: No module named pip\n"
+    },
+    "nvidia_smi": {
+      "returncode": 0,
+      "stdout": "name, driver_version, memory.total [MiB], memory.used [MiB], memory.free [MiB]\nNVIDIA GeForce RTX 5060 Laptop GPU, 582.05, 8151 MiB, 2139 MiB, 5672 MiB\n",
+      "stderr": ""
+    },
+    "lerobot_source": [
+      "G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot"
+    ],
+    "cuda_available": true,
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "capability": [
+      12,
+      0
+    ],
+    "bf16_supported": true,
+    "cuda_kernel_ok": true
+  },
+  "fp16_vs_bf16": {
+    "006000": {
+      "mean_abs_per_joint": [
+        0.03886611759662628,
+        0.13054589927196503,
+        0.1254262775182724,
+        0.05507604032754898,
+        0.026731261983513832,
+        0.018748689442873
+      ],
+      "max_abs_per_joint": [
+        0.3013620376586914,
+        1.4222946166992188,
+        1.0050506591796875,
+        0.4270172119140625,
+        0.13688039779663086,
+        0.21564579010009766
+      ]
+    },
+    "010000": {
+      "mean_abs_per_joint": [
+        0.03554800525307655,
+        0.12890878319740295,
+        0.1253541260957718,
+        0.05400068685412407,
+        0.027679061517119408,
+        0.020493773743510246
+      ],
+      "max_abs_per_joint": [
+        0.3700847625732422,
+        1.3657455444335938,
+        1.2926712036132812,
+        0.48947906494140625,
+        0.13494658470153809,
+        0.3563570976257324
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "checkpoint": "010000",
+  "amp": "bf16",
+  "torch": "2.7.1+cu118",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "load_seconds": 12.243391390889883,
+  "load_memory": {
+    "peak_allocated_mib": 884.05810546875,
+    "peak_reserved_mib": 906.0,
+    "current_allocated_mib": 883.32666015625,
+    "device_free_mib": 52492.1875,
+    "device_total_mib": 81050.625
+  },
+  "cold_first_chunk_ms": {
+    "pre_ms": 86.69645711779594,
+    "chunk_ms": 1913.1578467786312,
+    "post_ms": 0.20558759570121765,
+    "pipeline_ms": 2000.0598914921284
+  },
+  "load_and_cold_memory": {
+    "peak_allocated_mib": 926.1982421875,
+    "peak_reserved_mib": 956.0,
+    "current_allocated_mib": 898.57275390625,
+    "device_free_mib": 52346.1875,
+    "device_total_mib": 81050.625
+  },
+  "steady_memory": {
+    "peak_allocated_mib": 927.265625,
+    "peak_reserved_mib": 976.0,
+    "current_allocated_mib": 898.57275390625,
+    "device_free_mib": 52326.1875,
+    "device_total_mib": 81050.625
+  },
+  "warmup": 1,
+  "iterations": 33,
+  "seed": 20260919,
+  "latency_ms": {
+    "pre_ms": {
+      "p50": 10.881472378969193,
+      "p95": 89.65727835893631,
+      "mean": 28.105246975566402
+    },
+    "chunk_ms": {
+      "p50": 695.4915411770344,
+      "p95": 941.7497754096984,
+      "mean": 673.8216857792753
+    },
+    "post_ms": {
+      "p50": 0.1915469765663147,
+      "p95": 1.99386030435562,
+      "mean": 0.44655054807662964
+    },
+    "pipeline_ms": {
+      "p50": 715.0796838104725,
+      "p95": 991.0013429820538,
+      "mean": 702.3734833029183
+    }
+  },
+  "saved_unnormalizer_probe_passed": true,
+  "sample_count": 33,
+  "sample_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "valid_reference_steps": 1650,
+  "held_out_normalized_action_mse": 0.24539804458618164,
+  "held_out_mae_per_joint": {
+    "shoulder_pan.pos": 2.4696238040924072,
+    "shoulder_lift.pos": 9.040593147277832,
+    "elbow_flex.pos": 8.866355895996094,
+    "wrist_flex.pos": 4.173893928527832,
+    "wrist_roll.pos": 3.6692092418670654,
+    "gripper.pos": 1.6795949935913086
+  },
+  "prediction_min_per_joint": [
+    -15.912205696105957,
+    -113.13984680175781,
+    -55.47374725341797,
+    48.17144012451172,
+    -6.862463474273682,
+    0.14507436752319336
+  ],
+  "prediction_max_per_joint": [
+    17.867782592773438,
+    44.05922317504883,
+    96.36759948730469,
+    102.74061584472656,
+    19.591848373413086,
+    27.75374412536621
+  ],
+  "all_actions_finite": true,
+  "chunk_shape": [
+    1,
+    50,
+    6
+  ],
+  "nvidia_smi_after": {
+    "returncode": 0,
+    "stdout": "memory.used [MiB], memory.free [MiB]\n28724 MiB, 52326 MiB\n",
+    "stderr": ""
+  },
+  "limits": "Offline 33-frame subset, not full validation loss or grasp success; timing excludes camera/serial/video I/O. Same seed per sample, each measured call generates a fresh full chunk."
+}

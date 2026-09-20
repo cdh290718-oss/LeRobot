@@ -1,0 +1,18 @@
+{
+  "lerobot_offline_full.zip": {
+    "bytes": 1842331109,
+    "crc_check": "passed",
+    "entry_count": 54,
+    "code_hash_check": "passed",
+    "weights_file_count": 14,
+    "sha256": "3ad0a236de41299b6e3d8a8c212012ee49c8b4c14bc73cb6e8819200f499389a"
+  },
+  "lerobot_offline_scripts_samples.zip": {
+    "bytes": 28847473,
+    "crc_check": "passed",
+    "entry_count": 40,
+    "code_hash_check": "passed",
+    "weights_file_count": 0,
+    "sha256": "4e8bba2566691b21af7e02f10967da898d6d7e27f6096b56099b76a7629845da"
+  }
+}

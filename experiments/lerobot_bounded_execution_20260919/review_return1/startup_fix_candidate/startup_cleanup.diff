@@ -1,0 +1,21 @@
+--- original/control_core.py
++++ candidate/control_core.py
+@@ -112,14 +112,17 @@
+         fresh = self.raw_read()
+         if max(abs(a-b) for a, b in zip(raw, fresh)) > 2:
+             raise RuntimeError('Arm moved during preflight; position not stable')
++        # Any attempted target write may leave hardware state uncertain.
++        # Arm cleanup before the first write, including a partial/failed TX.
++        self.may_be_enabled = True
+         self.write_register('Goal_Position', fresh)
+         self.verify('Goal_Position', fresh)
++        self.verify('Torque_Enable', [0] * 6)
+         again = self.raw_read()
+         if max(abs(a-b) for a, b in zip(again, fresh)) > 2:
+             raise RuntimeError('Arm moved before torque enable')
+         if stop_requested():
+             raise RuntimeError('Stop requested before torque enable')
+-        self.may_be_enabled = True  # partial broadcast failure also needs cleanup
+         self.write_register('Torque_Enable', [1] * 6)
+         self.verify('Torque_Enable', [1] * 6)
+         self.events.append({'event': 'aligned_then_enabled', 'time': time.perf_counter(), 'raw': fresh})

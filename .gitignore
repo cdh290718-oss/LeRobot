@@ -42,3 +42,10 @@ id_ed25519
 
 # Source snapshots intentionally keep the working frontend build and small
 # historical records; nested upstream ignore rules are handled when archiving.
+
+# Small, explicitly archived experiment deliveries and user-return evidence (20260920).
+!/cui_local_computer_files/results/*.zip
+!/cui_local_computer_files/results/return1/*.zip
+!/experiments/lerobot_live_readonly_20260919/lerobot_live_readonly_kit.zip
+!/experiments/lerobot_bounded_execution_20260919/lerobot_bounded_execution_kit.zip
+!/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit.zip

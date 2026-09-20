@@ -1,0 +1,834 @@
+{
+  "as_of": "2026-09-20",
+  "source_project_root": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose",
+  "repository": "cdh290718-oss/LeRobot",
+  "purpose": "20260919 deployment/evaluation evidence and agent handoff",
+  "scope_excludes": [
+    "model weights",
+    "optimizers",
+    "full training videos",
+    "Python environments",
+    "model caches",
+    "credentials"
+  ],
+  "files": [
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/PLAN_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/PLAN_zh.md",
+      "bytes": 11471,
+      "sha256": "40c09464dbf78e27685410d00f54e4b9a80e16418431b9231cd9de55be237d8f"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/DELIVERY_VALIDATION.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/DELIVERY_VALIDATION.json",
+      "bytes": 522,
+      "sha256": "69e1ae1cd31d6849f794f15e1f0c8d29f5a19d38322be2b378a813bfa521331d"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/build_delivery.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/build_delivery.py",
+      "bytes": 2363,
+      "sha256": "eb54013cfa51fd0785630830d04667298c85a255f813d23686b1a16cf71feadd"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/finalize_delivery.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/finalize_delivery.py",
+      "bytes": 1676,
+      "sha256": "d87e00f8de0b58224dfb8736c75bb272eef8a0e4cb8c9da9f9cfc94c907f2887"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/DEVELOPER_VALIDATION.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/DEVELOPER_VALIDATION.json",
+      "bytes": 17770,
+      "sha256": "476b554ed5750358a4d54a9383d0de4a4f9303cbee521461d96b7d15620b4e9e"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/README_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/README_zh.md",
+      "bytes": 7140,
+      "sha256": "6c9c6ba286dea9d6c0a13ea64baaf8586ed02df5f93eb5e2de65ada2e1fb9015"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/Run-Offline.ps1",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/Run-Offline.ps1",
+      "bytes": 1892,
+      "sha256": "4eaf13a6b78ce8507ffe180f0f749b553b81df9d93acc5076166ee0e6259995f"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/checkpoint_manifest.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/checkpoint_manifest.json",
+      "bytes": 3182,
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/export_samples.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/export_samples.py",
+      "bytes": 3112,
+      "sha256": "9dc5bedf521630b017584e98f1db86fe4caaf1072b98695a3a9c1debf1f8c542"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/offline_eval.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/offline_eval.py",
+      "bytes": 22383,
+      "sha256": "a00b24c4c89083099036c8345dd549cef871302bd55bb2acd2fd8d582c680b46"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep056_frame00048.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep056_frame00048.npz",
+      "bytes": 891217,
+      "sha256": "30bdc4457ed7836bc99d650bcac2228db7e05787a0a5de9f7a252492157f56f4"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep056_frame00242.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep056_frame00242.npz",
+      "bytes": 797837,
+      "sha256": "656ede002f156a7c8848c27077d3b46e5fb21a3d9ffbf5c4273fe6646cca7e2c"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep056_frame00411.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep056_frame00411.npz",
+      "bytes": 923767,
+      "sha256": "9a66dac423d4af853361f3f785d12b6fd1ea02c1445d3dc360e001aacaf7687e"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep057_frame00050.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep057_frame00050.npz",
+      "bytes": 907734,
+      "sha256": "c7d834b251ebd073140b633cafe67ae70980614b78fd194870979f61c7d1b36c"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep057_frame00250.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep057_frame00250.npz",
+      "bytes": 862179,
+      "sha256": "5d7071cdd477dd8b7dc0067d53fec07a49f100a768af65eae153551f69a7e91c"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep057_frame00425.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep057_frame00425.npz",
+      "bytes": 876300,
+      "sha256": "9cae70e4a633f429bc49406ebce905f8982b75d972047f4fff8e2a9f92e61b26"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep058_frame00045.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep058_frame00045.npz",
+      "bytes": 888277,
+      "sha256": "789f2ebf56a65a9869f4096976e502976710a03cbd42ca1c773258dd6c2dd662"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep058_frame00228.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep058_frame00228.npz",
+      "bytes": 857985,
+      "sha256": "f0ccab938004d552182dd01364faa40e1e41ebcbd7430c47ddc2753d1acec357"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep058_frame00388.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep058_frame00388.npz",
+      "bytes": 863630,
+      "sha256": "314ce0abdbc277449778dd377c6e33d4f1e151892113915d2dc8d5351ba32af9"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep059_frame00055.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep059_frame00055.npz",
+      "bytes": 888220,
+      "sha256": "6eac880a76e9a0817a2a9719a6695d40981b86f2045be0d7a1306fbdd5e4fee8"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep059_frame00278.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep059_frame00278.npz",
+      "bytes": 810827,
+      "sha256": "2858c7e6da3b28ade68206d2d5665097af8dfd80f1d0de7e396cfa8e15cd03b2"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep059_frame00472.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep059_frame00472.npz",
+      "bytes": 872549,
+      "sha256": "33b61246a79773afc28c488d71e4c9caa6ec7aeb9dd72bf09f029ca28d90f6b0"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep060_frame00050.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep060_frame00050.npz",
+      "bytes": 908951,
+      "sha256": "c6ad8257c12eefe655c27273f005d214c90a5561995ec8391e2851cb1dccc724"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep060_frame00252.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep060_frame00252.npz",
+      "bytes": 857616,
+      "sha256": "488edba934d04235379de9053deb9afc31a937ac9ad04818bbf6b354ef28d764"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep060_frame00428.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep060_frame00428.npz",
+      "bytes": 854668,
+      "sha256": "098fe36a74c8281f5c3573ba7040f6dea62452d664836825433b3539cc73a47f"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep061_frame00038.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep061_frame00038.npz",
+      "bytes": 910515,
+      "sha256": "bf1a0ff7789ccaf1e63ef305b1ac012e3c7a8f97e00deefa740485dcd6801ba1"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep061_frame00193.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep061_frame00193.npz",
+      "bytes": 859568,
+      "sha256": "07c8145f4242ccf499f7ba11a735c23ca44d13f0ee9dbc8db4e95793bfb8c9b9"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep061_frame00328.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep061_frame00328.npz",
+      "bytes": 882543,
+      "sha256": "777f4f4ace2c6972968b0c01eb5a52e7ada7ad9391148b868c2142079a7e93db"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep062_frame00042.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep062_frame00042.npz",
+      "bytes": 905121,
+      "sha256": "e775de96cdd3931aa9e91dc5ca73052ec90fa3d381edbb48a60499bd74c244f1"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep062_frame00212.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep062_frame00212.npz",
+      "bytes": 884523,
+      "sha256": "e5974a5a166946e9b6cb077195ed7c1d6efda41dd65914b176bb0ccdef8a1cf1"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep062_frame00360.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep062_frame00360.npz",
+      "bytes": 812513,
+      "sha256": "e07dd550bdb3513990c82eed0254634e3a1d9e259b60ac437296c6f139467cef"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep063_frame00040.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep063_frame00040.npz",
+      "bytes": 886658,
+      "sha256": "35ac6cedae4dea77f3fc003c96c2ab776f4d4c03bacde9e97cd4386a23187d0c"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep063_frame00204.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep063_frame00204.npz",
+      "bytes": 802810,
+      "sha256": "1496101ff92567991d6ec64ea841449a7759f6200c929d189697f7088a4910ff"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep063_frame00346.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep063_frame00346.npz",
+      "bytes": 869874,
+      "sha256": "6c3254cb4d3f18f28529c3bd15e2495f925781cdd0c7b14998ce7af2ee29c4ef"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep064_frame00049.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep064_frame00049.npz",
+      "bytes": 941252,
+      "sha256": "7add046e27e8d02a2333943e4957f7be4ae38f83d1e97d169b01d0c599a108bc"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep064_frame00246.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep064_frame00246.npz",
+      "bytes": 820936,
+      "sha256": "2809ff5a4c29430c8ce77dd462e16e9ad18a7160d54bc46abcf56b6ff960a94c"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep064_frame00418.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep064_frame00418.npz",
+      "bytes": 794729,
+      "sha256": "8504c254d4d6ad97cd9575afd5c6a27720a92caa4b26ee50b757ec019c2354f4"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep065_frame00060.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep065_frame00060.npz",
+      "bytes": 809578,
+      "sha256": "d4710d6c4cd8fe5e4fe73c7801a531e0d636b6bdb8cbae794b2c6fc1e584e610"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep065_frame00301.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep065_frame00301.npz",
+      "bytes": 870420,
+      "sha256": "f0cf5a26a6013011d857d403dd3a71f0b3187e895e136d3517c7670000726f63"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep065_frame00512.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep065_frame00512.npz",
+      "bytes": 1005365,
+      "sha256": "09c52f1894e71f9b944b3b2228cbc4a755eb81131cdfd83a1075732e68978c55"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep066_frame00052.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep066_frame00052.npz",
+      "bytes": 792623,
+      "sha256": "c357fa0c4fe1deb328fbf0b6b2d5013a74658b1a2a70edb8da292b63e316330f"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep066_frame00260.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep066_frame00260.npz",
+      "bytes": 982749,
+      "sha256": "32121598a26837c5f9678e5729a98351fdee195f2643c207976131008b5e2ed3"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep066_frame00442.npz",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/ep066_frame00442.npz",
+      "bytes": 881966,
+      "sha256": "4b0ccc5cf1045cbc272a122f8d7d8ab63869caeaa7a8689e1ad4301766957740"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/offline_kit/samples/manifest.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/offline_kit/samples/manifest.json",
+      "bytes": 10366,
+      "sha256": "ae82393b46783b35d372426a552bf95be5c4fb23cc396ca56ae475ccc7df73ff"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/windows_review_113316/ANALYSIS.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/windows_review_113316/ANALYSIS.json",
+      "bytes": 12013,
+      "sha256": "c20c6234fe9d8f672c9db4d3cabe4949c515b7aedc5e88a109e76bbd8696f59c"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/windows_review_113316/REVIEW_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/windows_review_113316/REVIEW_zh.md",
+      "bytes": 3878,
+      "sha256": "6707917fe5d90ae6a0a00a07dd72d297f1dc2a4551d6e0aff3f60429e4fc5b4b"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/windows_review_113316/analyze_return.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/windows_review_113316/analyze_return.py",
+      "bytes": 8860,
+      "sha256": "ac597ea598c91ed1fe8e5c07f9ab337bb1aa089d9d74236d5fb70e1bdf9acd01"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/environment.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/environment.json",
+      "bytes": 1306,
+      "sha256": "d5ffbd3f60aa33b8c75b411ae51fd4489b5ac23744fc46213c5d982ad7352b44"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/SUMMARY.txt",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/SUMMARY.txt",
+      "bytes": 678,
+      "sha256": "6eb566f89a7f25ddf5593a60497386a3561eb7e7648b662c4f38807d477d59e2"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/summary.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/summary.json",
+      "bytes": 21439,
+      "sha256": "566a49da75d98695455cd8825b2cb5c4839c7779dc3863e8f767344ca395bdc8"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/010000_bf16/result.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/010000_bf16/result.json",
+      "bytes": 3046,
+      "sha256": "8b3da9bf9129d0c34cd6d8214030a65197113193118a9ac312e5b9325314a7f0"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/010000_fp16/result.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/010000_fp16/result.json",
+      "bytes": 3051,
+      "sha256": "f42e3f97d3dcab7ac2d536b7a06a44d7c033a92e62429d84a9a2b0417e940755"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/006000_bf16/result.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/006000_bf16/result.json",
+      "bytes": 3045,
+      "sha256": "d2d89a750d763189f5a9fd65132586201a120c113b5cd109f417f7328dc9ac38"
+    },
+    {
+      "repository_path": "experiments/lerobot_local_deployment_20260919/developer_validation/006000_fp16/result.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_local_deployment_20260919/developer_validation/006000_fp16/result.json",
+      "bytes": 3045,
+      "sha256": "53ef79c69ebd1faf1c89ef865ea94f4c7746db2e7b2b3ee4c12089554ea20ed8"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/DEVELOPER_VALIDATION.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/DEVELOPER_VALIDATION.json",
+      "bytes": 3861,
+      "sha256": "6fe98cbb3374615c8e657fe2e945fd843f3ff83420c4a4ffda7f0bfd1ff2ad9e"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/README_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/README_zh.md",
+      "bytes": 7775,
+      "sha256": "1179ac02cf8f19b5000562d43233a84f0a9dea757757df1bf002f70c7426f8bc"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/Run-LiveReadOnly.ps1",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/Run-LiveReadOnly.ps1",
+      "bytes": 1858,
+      "sha256": "705a240eb8cd4e3bffd3ed7503eaec383f9284d97e430a4e70d4cca56b7409e6"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/TEST_RESULTS.txt",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/TEST_RESULTS.txt",
+      "bytes": 899,
+      "sha256": "59e386a6a9b66d18864e7398337c94de17315724783e6fe24b825756afe124d5"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/checkpoint_manifest.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/checkpoint_manifest.json",
+      "bytes": 3182,
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/live_probe.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/live_probe.py",
+      "bytes": 26773,
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/readonly_bus.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/reference_calibration.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/live_readonly_kit/test_readonly.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/live_readonly_kit/test_readonly.py",
+      "bytes": 5893,
+      "sha256": "a3abeab0124125e2fe5e98f5780db48f7a122602e92c4cf32fc4cb1d6a0b7ff7"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/ANALYSIS.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/ANALYSIS.json",
+      "bytes": 22697,
+      "sha256": "d3a20a553884ba706e1577ef48520e5c1af1d91c6d4f05e64841e8e8315b1722"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/REVIEW_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/REVIEW_zh.md",
+      "bytes": 5799,
+      "sha256": "8e23c46656ce9cdc843317a33e5ebf422564be1fd9808ae2d72fed4663ed1147"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/analyze.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/analyze.py",
+      "bytes": 4735,
+      "sha256": "ffd94b43ec3e98d141d0aceb797a0f984ec496875a2f840950e6592c6a1ee0a1"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/inputs_first_preview.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/inputs_first_preview.jpg",
+      "bytes": 85218,
+      "sha256": "f5a9d086514ed297a783463320362cb5d33031182df5dd671f5ba90a9188ae53"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/inputs_last_preview.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/inputs_last_preview.jpg",
+      "bytes": 85124,
+      "sha256": "720d5c3557c8a6054076794af7d3bd14d3e7f69157ef3e4fef752a22f839da5d"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/inputs_middle_preview.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/inputs_middle_preview.jpg",
+      "bytes": 84915,
+      "sha256": "00781c602f32d652c27801ec35004311b2b6a91807348fc65b61a9ba832d2e9a"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/live_first_preview.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/live_first_preview.jpg",
+      "bytes": 83831,
+      "sha256": "e4fa2b0637d75eada41768e388e049813f8184048fa5ceb1af672e3f042ac18f"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/live_last_preview.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/live_last_preview.jpg",
+      "bytes": 86738,
+      "sha256": "e4d30559033f80a9c23b5f4a2f92bd998eedb2e348cf518314bc0508ddfb2f50"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/review_121541/live_middle_preview.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/review_121541/live_middle_preview.jpg",
+      "bytes": 86557,
+      "sha256": "8c83734cd396c1b22dae88f4a317a3121d1a1eb531a77a4dc6830c3652786d89"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/lerobot_live_readonly_kit.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/lerobot_live_readonly_kit.zip",
+      "bytes": 21233,
+      "sha256": "50b98590368279e130c4c3ae8441b8c45251cfd6e54c5ac06cf52320dd984c80"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/build_delivery.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/build_delivery.py",
+      "bytes": 2803,
+      "sha256": "0fb2bd799aeb3f2e4a19c01d69ab0ee3490535efb4c3fe03705c947ae2c90ee9"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/developer_tests.log",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/developer_tests.log",
+      "bytes": 899,
+      "sha256": "59e386a6a9b66d18864e7398337c94de17315724783e6fe24b825756afe124d5"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/developer_replay_bf16/summary.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/developer_replay_bf16/summary.json",
+      "bytes": 4347,
+      "sha256": "95c9765c45c82be9b93fa0930e12a5f639888ae98575b3ef774d6f24825b9510"
+    },
+    {
+      "repository_path": "experiments/lerobot_live_readonly_20260919/developer_replay_fp16/summary.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_live_readonly_20260919/developer_replay_fp16/summary.json",
+      "bytes": 4343,
+      "sha256": "53be77ea50b3fcf7f74759c5d72ab3e7f1cc3ac1184d31cb16b82be2523ab96b"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/DEVELOPER_VALIDATION.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/DEVELOPER_VALIDATION.json",
+      "bytes": 3192,
+      "sha256": "b7d84edfee86627db9ae0fa27880353b987701d2e63a9176d955a6438920b629"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/MANIFEST.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/MANIFEST.json",
+      "bytes": 1741,
+      "sha256": "7ff20dd8e0860b55d0f1e61dad71bc86492ad4231919cb5160acab222840bba3"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/README_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/README_zh.md",
+      "bytes": 6761,
+      "sha256": "77a38a94e6398562f7eb7648802d0d929aa62958a6153b9818528340600ffcb2"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/Run-Bounded.ps1",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/Run-Bounded.ps1",
+      "bytes": 2133,
+      "sha256": "ff70a385ee7b4839831df7bf3c52f24253f7d4be32aaaa5f0400af228c798802"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/TEST_RESULTS.txt",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/TEST_RESULTS.txt",
+      "bytes": 1873,
+      "sha256": "6aace8afa78e4e371d53612a3b1aebf590a3d339126abf0f61b0bb3a3b53a1b3"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/bounded_run.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/bounded_run.py",
+      "bytes": 24225,
+      "sha256": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/checkpoint_manifest.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/checkpoint_manifest.json",
+      "bytes": 3182,
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/control_core.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/control_core.py",
+      "bytes": 9660,
+      "sha256": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/live_probe.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/live_probe.py",
+      "bytes": 26773,
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/readonly_bus.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/reference_calibration.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/test_control.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/test_control.py",
+      "bytes": 9230,
+      "sha256": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/execution_kit/test_integration.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/execution_kit/test_integration.py",
+      "bytes": 4839,
+      "sha256": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130110_587_camera_before.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130110_587_camera_before.jpg",
+      "bytes": 131717,
+      "sha256": "ef44006598d3a3f7b62ae0bb8d605be1e6c5cc8edc5d2db2092924345e3ebaed"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130110_587_camera_last_observation.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130110_587_camera_last_observation.jpg",
+      "bytes": 140690,
+      "sha256": "fa4a5298dc37faaced5dc1108d6ebfaac7282248b6d14823de7209ed82f5caa0"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130228_831_camera_before.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130228_831_camera_before.jpg",
+      "bytes": 149394,
+      "sha256": "6bbe7257e50f3fad0f87354cb0b3fc7f6bf0c6dddcd18dab069db229d940d098"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130228_831_camera_last_observation.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130228_831_camera_last_observation.jpg",
+      "bytes": 148112,
+      "sha256": "b317cff79299515bb0c05b281a8a9da51b2d07957b3d8cd3769263bc4fd5fecd"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130403_715_camera_before.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130403_715_camera_before.jpg",
+      "bytes": 135596,
+      "sha256": "a49c62d626d9ca6834202f6dea6290e88f2304a517cf0bc924201ec5dc9f6b15"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130403_715_camera_last_observation.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130403_715_camera_last_observation.jpg",
+      "bytes": 131288,
+      "sha256": "0bf35370a0f6c70653b599e5492db996e8eb35659fa56c71cc8a161ad0b392c7"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130640_906_camera_before.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130640_906_camera_before.jpg",
+      "bytes": 147962,
+      "sha256": "f0a14d01a7a35e09a34c3039ff320643072a3b84e2b5d4807761311a608f2a8c"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130640_906_camera_last_observation.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/20260919_130640_906_camera_last_observation.jpg",
+      "bytes": 144947,
+      "sha256": "00fba7fab10271c32d238c32ab9c76fa9c8e4e0609e2a6ebb4eda0e8e5c25bc0"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/ANALYSIS.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/ANALYSIS.json",
+      "bytes": 38507,
+      "sha256": "ba77a6d0e918a7c1cfa7c33402ceec0cd496647d38cae09780c5b94aa60ef529"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/DELIVERY.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/DELIVERY.json",
+      "bytes": 266,
+      "sha256": "611cceba576eec74af862026cf41697cdee2ae25a268b899f9d68ba4ed412202"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/REVIEW_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/REVIEW_zh.md",
+      "bytes": 7047,
+      "sha256": "4b053eb2ecb30baf1054b6bdb7648698338b26d81d768010925e635215460dec"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/analyze.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/analyze.py",
+      "bytes": 5208,
+      "sha256": "f4b2bb45854126092422e3abcd75aa17b62535a0c7ff3ff8192ea2ba0be90172"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/camera_comparison.jpg",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/camera_comparison.jpg",
+      "bytes": 281307,
+      "sha256": "3197eac83442b7b558b9b965edd5b0ba66b1559370241336ebaee85b0cdb0b0b"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/elbow_tracking.png",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/elbow_tracking.png",
+      "bytes": 162319,
+      "sha256": "306d5d02e6f461f534095715b4bd4425dd3c997314663d46d8eb597e22530f1b"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/MANIFEST.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/MANIFEST.json",
+      "bytes": 740,
+      "sha256": "8e26b5c63bd1c21f78168eda5af63c55c99ddae536831d249a7940b98f593a19"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/README_zh.md",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/README_zh.md",
+      "bytes": 1402,
+      "sha256": "f31169c2a33489340a2a8464e63e6578adea371800e35aa816119b344321d64f"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/Run-MotorDiagnostic.ps1",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/Run-MotorDiagnostic.ps1",
+      "bytes": 818,
+      "sha256": "37b00a6e5f514625324fd7b9f7ea73d07aa7f80b1ba5f80eeec363e9a5cc8d45"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/motor_diagnostic.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/motor_diagnostic.py",
+      "bytes": 5353,
+      "sha256": "fa53a0ba92568619c4f25745ffab5819f67ed69e3cd418755454e071cf47033d"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/readonly_bus.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/reference_calibration.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/test_diagnostic.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit/test_diagnostic.py",
+      "bytes": 2282,
+      "sha256": "83f1bc9d7799a289be89bfe2c8f435e4bdf5c4d44100fa546b64428f12a97a7e"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/motor_diagnostic_kit.zip",
+      "bytes": 7899,
+      "sha256": "59b6ec615480bac9ce856145601f1644b00dd1ac50ef490c3b1ff03d7c6f45b8"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/startup_fix_candidate/control_core.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/startup_fix_candidate/control_core.py",
+      "bytes": 9808,
+      "sha256": "2803e5e3e5b17ad645ec1ade0c485fd33316e2dfb92c450febfc28f97572fd2d"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/startup_fix_candidate/startup_cleanup.diff",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/startup_fix_candidate/startup_cleanup.diff",
+      "bytes": 1142,
+      "sha256": "7096d90f8c8c095dbd4bf764963baebeb26bd4af69683d1133c86e488c4fac1b"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/review_return1/startup_fix_candidate/test_startup_fix.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/review_return1/startup_fix_candidate/test_startup_fix.py",
+      "bytes": 1469,
+      "sha256": "2928914fdbd510ff5bdfb4dc97e01af04cc669a1dc9c89f72e9baa0a34a4be94"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/lerobot_bounded_execution_kit.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/lerobot_bounded_execution_kit.zip",
+      "bytes": 36018,
+      "sha256": "fbedb981185a040b40d0b8addcc3b101aa1c59e0eba4a0057e264b3d816fa426"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/DELIVERY.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/DELIVERY.json",
+      "bytes": 278,
+      "sha256": "8096489d8abad8ea1911fa76c432ddf032d1ddfb07ab625163229298d7e2ef33"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/TEST_RESULTS.txt",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/TEST_RESULTS.txt",
+      "bytes": 1873,
+      "sha256": "6aace8afa78e4e371d53612a3b1aebf590a3d339126abf0f61b0bb3a3b53a1b3"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/build_delivery.py",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/build_delivery.py",
+      "bytes": 4907,
+      "sha256": "0c5ebe25bf42f51a4870296eb7c0da35e6168883a36a9722ce812e9e73262c82"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/summary.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/summary.json",
+      "bytes": 4325,
+      "sha256": "4023ac2afb5d264c3cfea07794e4caa2bacd29a8dcd278d79e69f11dcbbf178f"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/inference_summary.json",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/inference_summary.json",
+      "bytes": 602,
+      "sha256": "14d44767bc05cee31edef0c6609211867aa42e7a94e3bd1d61eceba189db6569"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/control.jsonl",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/control.jsonl",
+      "bytes": 224585,
+      "sha256": "78471a1b61a86f5330cd0fa0fcca7065bc262f495e1c923ea20cdea3d7530549"
+    },
+    {
+      "repository_path": "experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/chunks.jsonl",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/experiments/lerobot_bounded_execution_20260919/developer_simulation_final_bf16/chunks.jsonl",
+      "bytes": 253987,
+      "sha256": "5be2ea8d0753523f28af7bb7d008d16e490d7beef141b77b9380fe45c5e08a8b"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/20260919_113316_962_Run_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/20260919_113316_962_Run_return.zip",
+      "bytes": 218623,
+      "sha256": "061cb8ee383a521e392d39a3db366421cf37ab6f66a94f6114dc435da610ca31"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/20260919_121454_372_Inputs_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/20260919_121454_372_Inputs_bf16_return.zip",
+      "bytes": 381117,
+      "sha256": "adfc6bcab66d74687b21845cf2461a55ca33fe385bfe32abba5c1ac29f62a38c"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/20260919_121541_727_Live_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/20260919_121541_727_Live_bf16_return.zip",
+      "bytes": 501365,
+      "sha256": "f268eb10715673cf5af5bf548191a1b491958668748e1fe9a372fd756b9f090e"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_125400_373_DryRun_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_125400_373_DryRun_bf16_return.zip",
+      "bytes": 463781,
+      "sha256": "f5b465e6e9c8cdab87e6432069adaa7d323778b48727f6ae2c13b8fa305ae245"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_125522_545_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_125522_545_Execute_bf16_return.zip",
+      "bytes": 334556,
+      "sha256": "0477fd0226ff0084f43fb529dee01a5004f0940164ad3dbd8798472991297fd7"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_125747_095_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_125747_095_Execute_bf16_return.zip",
+      "bytes": 1653,
+      "sha256": "feb99eabede418ec5c4a8dcbb4c697c4294b6d6f3b2147554c7e9344e97d23f8"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_125836_702_Release_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_125836_702_Release_bf16_return.zip",
+      "bytes": 1551,
+      "sha256": "fc2793c02350ea46c5409029067e8f304498c88a5d13078b09a59755b6cb9912"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_125904_944_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_125904_944_Execute_bf16_return.zip",
+      "bytes": 155226,
+      "sha256": "55be148441bf7ff7090bfa64566d42ca05fe45be186f768558ea983383eb3289"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_130110_587_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_130110_587_Execute_bf16_return.zip",
+      "bytes": 426099,
+      "sha256": "600df87ba9ec98a2bd106caec9d36a5403cf5aaae5cabf2199a5dcd12dbe0248"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_130228_831_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_130228_831_Execute_bf16_return.zip",
+      "bytes": 449486,
+      "sha256": "f85b4158c9609a10c01469d61f63fc1d7610cc4e0847477b38cad7f05b251230"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_130337_936_Release_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_130337_936_Release_bf16_return.zip",
+      "bytes": 1551,
+      "sha256": "d775f3b7220183e96f56427a7fab45a1eed30dfef461c7365ca0c9cb5d449d63"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_130403_715_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_130403_715_Execute_bf16_return.zip",
+      "bytes": 302686,
+      "sha256": "3cf656328d70d11148951fad5b92729613b3482c436312449c148b3d98a9a77f"
+    },
+    {
+      "repository_path": "cui_local_computer_files/results/return1/20260919_130640_906_Execute_bf16_return.zip",
+      "developer_path": "/vepfs-mlp2/mlp-public/huyaoqing/EgoFishPose/cui_local_computer_files/results/return1/20260919_130640_906_Execute_bf16_return.zip",
+      "bytes": 329456,
+      "sha256": "e05645225fb8281b94c54d006217429c3d0299c903604300d826a7b9e6c62ee3"
+    }
+  ],
+  "count": 136,
+  "bytes": 35404750
+}

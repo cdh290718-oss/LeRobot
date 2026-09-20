@@ -1,0 +1,20 @@
+Status: passed
+Offline only; no robot/camera/serial connection.
+Details: summary.json. Report is NOT a real-robot deployment approval.
+
+006000 fp16: passed
+  chunk P50/P95 ms: 705.80/1190.85
+  pipeline P50/P95 ms: 741.66/1238.47
+  held-out normalized action MSE: 0.309312
+006000 bf16: passed
+  chunk P50/P95 ms: 613.70/1107.69
+  pipeline P50/P95 ms: 693.81/1181.27
+  held-out normalized action MSE: 0.309564
+010000 fp16: passed
+  chunk P50/P95 ms: 788.58/1192.79
+  pipeline P50/P95 ms: 801.03/1296.35
+  held-out normalized action MSE: 0.245025
+010000 bf16: passed
+  chunk P50/P95 ms: 695.49/941.75
+  pipeline P50/P95 ms: 715.08/991.00
+  held-out normalized action MSE: 0.245398

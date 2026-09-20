@@ -1,0 +1,21 @@
+{
+  "status": "stopped",
+  "has_hardware_access": false,
+  "model": {
+    "checkpoint": "010000",
+    "precision": "bf16",
+    "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "path": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model",
+    "load_seconds": 10.5948597304523,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "torch": "2.7.1+cu118",
+    "strict_load": true,
+    "unnormalizer_probe": true
+  },
+  "warmup_chunks": 5,
+  "chunks": 39,
+  "memory": {
+    "peak_allocated_mib": 927.26513671875,
+    "peak_reserved_mib": 976.0
+  }
+}
